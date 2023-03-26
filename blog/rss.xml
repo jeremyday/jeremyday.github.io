@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Your First 100 Miler</title>
+        <link>https://your-docusaurus-test-site.com/blog</link>
+        <description>Everything you need to knkow to run your first 100 miler.</description>
+        <lastBuildDate>Sun, 12 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>Copyright © 2023 &lt;a href="mailto:jlday@protonmail.com"&gt;Jeremy Day&lt;/a&gt;</copyright>
+        <item>
+            <title><![CDATA[Pikes Peak Winter Ascent]]></title>
+            <link>https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent</link>
+            <guid>https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent</guid>
+            <pubDate>Sun, 12 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since Bigfoot 200.]]></description>
+            <content:encoded><![CDATA[<p>I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since <strong><a href="https://www.destinationtrailrun.com/bigfoot" target="_blank" rel="noopener noreferrer">Bigfoot 200</a></strong>.</p><p>My friend Jeremy met me at my house at 4:30 and we drove to the Barr Trail trailhead in Manitou Springs. We got there, got our packs and equipment ready, and were on the trail by about 5:10 or so. We initially thought we might go a ways without spikes, but there was a lot of ice at the very bottom of the trail, so we quickly decided to put on our <strong><a href="/docs/terms/m#microspikes">microspikes</a></strong>.</p>]]></content:encoded>
+            <category>mountains</category>
+            <category>running</category>
+            <category>trails</category>
+        </item>
+    </channel>
+</rss>

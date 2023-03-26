@@ -1,0 +1,25 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Your First 100 Miler",
+    "home_page_url": "https://your-docusaurus-test-site.com/blog",
+    "description": "Everything you need to knkow to run your first 100 miler.",
+    "items": [
+        {
+            "id": "https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent",
+            "content_html": "<p>I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since <strong><a href=\"https://www.destinationtrailrun.com/bigfoot\" target=\"_blank\" rel=\"noopener noreferrer\">Bigfoot 200</a></strong>.</p><p>My friend Jeremy met me at my house at 4:30 and we drove to the Barr Trail trailhead in Manitou Springs. We got there, got our packs and equipment ready, and were on the trail by about 5:10 or so. We initially thought we might go a ways without spikes, but there was a lot of ice at the very bottom of the trail, so we quickly decided to put on our <strong><a href=\"/docs/terms/m#microspikes\">microspikes</a></strong>.</p>",
+            "url": "https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent",
+            "title": "Pikes Peak Winter Ascent",
+            "summary": "I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since Bigfoot 200.",
+            "date_modified": "2023-02-12T00:00:00.000Z",
+            "author": {
+                "name": "Jeremy Day",
+                "url": "https://github.com/jeremyday"
+            },
+            "tags": [
+                "mountains",
+                "running",
+                "trails"
+            ]
+        }
+    ]
+}

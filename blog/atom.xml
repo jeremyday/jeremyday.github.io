@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-test-site.com/blog</id>
+    <title>Your First 100 Miler</title>
+    <updated>2023-02-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
+    <subtitle>Everything you need to knkow to run your first 100 miler.</subtitle>
+    <icon>https://your-docusaurus-test-site.com/img/favicon.ico</icon>
+    <rights>Copyright © 2023 &lt;a href="mailto:jlday@protonmail.com"&gt;Jeremy Day&lt;/a&gt;</rights>
+    <entry>
+        <title type="html"><![CDATA[Pikes Peak Winter Ascent]]></title>
+        <id>https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent</id>
+        <link href="https://your-docusaurus-test-site.com/blog/pikes-peak-winter-ascent"/>
+        <updated>2023-02-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since Bigfoot 200.]]></summary>
+        <content type="html"><![CDATA[<p>I ascended Pikes Peak in the winter. It was my first 14. It was one of the stoutest things I've done since <strong><a href="https://www.destinationtrailrun.com/bigfoot" target="_blank" rel="noopener noreferrer">Bigfoot 200</a></strong>.</p><p>My friend Jeremy met me at my house at 4:30 and we drove to the Barr Trail trailhead in Manitou Springs. We got there, got our packs and equipment ready, and were on the trail by about 5:10 or so. We initially thought we might go a ways without spikes, but there was a lot of ice at the very bottom of the trail, so we quickly decided to put on our <strong><a href="/docs/terms/m#microspikes">microspikes</a></strong>.</p>]]></content>
+        <author>
+            <name>Jeremy Day</name>
+            <uri>https://github.com/jeremyday</uri>
+        </author>
+        <category label="mountains" term="mountains"/>
+        <category label="running" term="running"/>
+        <category label="trails" term="trails"/>
+    </entry>
+</feed>

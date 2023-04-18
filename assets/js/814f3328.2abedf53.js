@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfirst_100_miler_docusaurus=self.webpackChunkfirst_100_miler_docusaurus||[]).push([[2535],{5641:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Mount Rosa Ascent Attempt","permalink":"/blog/mt-rosa-ascent-attempt"}]}')}}]);

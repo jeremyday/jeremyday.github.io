@@ -2,12 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/blog</id>
     <title>Your First 100 Miler</title>
-    <updated>2023-04-22T00:00:00.000Z</updated>
+    <updated>2023-06-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
     <subtitle>Everything you need to knkow to run your first 100 miler.</subtitle>
     <icon>https://your-docusaurus-test-site.com/img/favicon.ico</icon>
     <rights>Copyright © 2023 &lt;a href="mailto:jlday@protonmail.com"&gt;Jeremy Day&lt;/a&gt;</rights>
+    <entry>
+        <title type="html"><![CDATA[Mount Rosa Long Ascent]]></title>
+        <id>https://your-docusaurus-test-site.com/blog/mount-rosa-long-ascent</id>
+        <link href="https://your-docusaurus-test-site.com/blog/mount-rosa-long-ascent"/>
+        <updated>2023-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Race Report]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="race-report">Race Report<a href="#race-report" class="hash-link" aria-label="Direct link to Race Report" title="Direct link to Race Report">​</a></h2><p>I finally got around to summiting Mount Rosa. I started at 4:20 in the morning at the parking lot at the bottom of Cheyenne Mountain Canyon and finished 8 hours, 25 miles, and 6,725 feet of climbing later. I was expecting closer to 23 miles, and those extra couple of miles were rough, as I needed to stretch my water more than expected. I'm still getting used to long mountain adventures, and I told my wife I thought I  might be done at 10:00. I felt bad about being completely wrong, but I had my phone with me and had turned on my Spot tracker, so she knew where I was okay.</p>]]></content>
+        <author>
+            <name>Jeremy Day</name>
+            <uri>https://github.com/jeremyday</uri>
+        </author>
+        <category label="colorado" term="colorado"/>
+        <category label="mountains" term="mountains"/>
+        <category label="trails" term="trails"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mace's Hideout 100 DNF]]></title>
+        <id>https://your-docusaurus-test-site.com/blog/maces-hideout-100-dnf</id>
+        <link href="https://your-docusaurus-test-site.com/blog/maces-hideout-100-dnf"/>
+        <updated>2023-06-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Race Report]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="race-report">Race Report<a href="#race-report" class="hash-link" aria-label="Direct link to Race Report" title="Direct link to Race Report">​</a></h2><p>Well, this did not go according to plan. I started getting a migraine at the <a href="/docs/races/maces-hideout-100#aid-station-3">Greenhorn Aid Station</a> at mile 18.3. That's the second highest point on the course. On the way down the mountain it mostly went away, but it came roaring back around <a href="/docs/races/maces-hideout-100#aid-station-5">Pole Creek</a> at the bottom of the mountain. I pushed on to <a href="/docs/races/maces-hideout-100#aid-station-6">Sand Hollow</a> at mile 37.7, but I was experiencing some dizziness. I decided I didn't want to risk vertigo further up the mountain, since Sand Hollow was pretty much the lowest point on the course, so I called it a day. Right after I dropped the skies opened up and a cold, cold rain started falling.</p><a href="/docs/races/maces-hideout-100#race-reports" class="text-sm backlink">Mace's Hideout 100 » Race Reports</a>]]></content>
+        <author>
+            <name>Jeremy Day</name>
+            <uri>https://github.com/jeremyday</uri>
+        </author>
+        <category label="100miles" term="100miles"/>
+        <category label="colorado" term="colorado"/>
+        <category label="mountains" term="mountains"/>
+        <category label="race" term="race"/>
+        <category label="trails" term="trails"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Collegiate Peaks 50 Mile Race Report]]></title>
+        <id>https://your-docusaurus-test-site.com/blog/collegiate-peaks-50-race-report</id>
+        <link href="https://your-docusaurus-test-site.com/blog/collegiate-peaks-50-race-report"/>
+        <updated>2023-05-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Race Report]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="race-report">Race Report<a href="#race-report" class="hash-link" aria-label="Direct link to Race Report" title="Direct link to Race Report">​</a></h2><p>I didn't actually run 50 miles. I was struggling pretty much out of the gate with energy to my legs. I'm not sure why, because I think I fueled properly. I didn't sleep much Friday night because I had that anxious tick where I was afraid I was going to miss my alarm, even though there were three other adults in the house where I stayed who would be getting up for the race.</p><a href="/docs/races/collegiate-peaks-50#race-reports" class="text-sm backlink">Collegiate Peaks 50 » Race Reports</a>]]></content>
+        <author>
+            <name>Jeremy Day</name>
+            <uri>https://github.com/jeremyday</uri>
+        </author>
+        <category label="50miles" term="50miles"/>
+        <category label="colorado" term="colorado"/>
+        <category label="mountains" term="mountains"/>
+        <category label="race" term="race"/>
+        <category label="trails" term="trails"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Royal Gorge Groove 50k Race Report]]></title>
         <id>https://your-docusaurus-test-site.com/blog/royal-gorge-groove-50k-race-report</id>
@@ -19,10 +68,10 @@
             <name>Jeremy Day</name>
             <uri>https://github.com/jeremyday</uri>
         </author>
-        <category label="mountains" term="mountains"/>
-        <category label="trails" term="trails"/>
-        <category label="race" term="race"/>
         <category label="50k" term="50k"/>
+        <category label="mountains" term="mountains"/>
+        <category label="race" term="race"/>
+        <category label="trails" term="trails"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Mount Rosa Ascent Attempt]]></title>

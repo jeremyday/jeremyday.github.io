@@ -2,7 +2,7 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Your First 100 Miler",
     "home_page_url": "https://your-docusaurus-test-site.com/blog",
-    "description": "Everything you need to knkow to run your first 100 miler.",
+    "description": "Everything you need to know to run your first 100 miler.",
     "items": [
         {
             "id": "https://your-docusaurus-test-site.com/blog/mount-rosa-long-ascent",

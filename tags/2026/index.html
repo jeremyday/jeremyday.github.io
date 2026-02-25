@@ -1,0 +1,2126 @@
+<!-- BEGIN app/views/layouts/application.html.erb
+--><!DOCTYPE html>
+<html class="h-full bg-white">
+  <head>
+    <title>2026</title>
+<link rel="canonical" href="http://localhost:3000/tags/2026/">
+<meta property="og:title" content="2026">
+<meta property="og:url" content="http://localhost:3000/tags/2026/">
+<meta property="og:site_name" content="Your First 100 Miler">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="alternate" type="application/rss+xml" title="Posts RSS Feed" href="http://localhost:3000/feeds/posts.xml" />
+    
+
+    <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
+<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  </head>
+
+  <body class="h-full">
+    <el-dialog>
+      <dialog id="sidebar" class="backdrop:bg-transparent lg:hidden">
+        <el-dialog-backdrop class="fixed inset-0 bg-gray-900/80 transition-opacity duration-300 ease-linear data-closed:opacity-0"></el-dialog-backdrop>
+
+        <div tabindex="0" class="fixed inset-0 flex focus:outline-none">
+          <el-dialog-panel class="group/dialog-panel relative mr-16 flex w-full max-w-xs flex-1 transform transition duration-300 ease-in-out data-closed:-translate-x-full">
+            <div class="absolute top-0 left-full flex w-16 justify-center pt-5 duration-300 ease-in-out group-data-closed/dialog-panel:opacity-0">
+              <button type="button" command="close" commandfor="sidebar" class="-m-2.5 p-2.5">
+                <span class="sr-only">Close sidebar</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  data-slot="icon"
+                  aria-hidden="true"
+                  class="size-6 text-white"
+                >
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Sidebar component, swap this element with another sidebar if you like -->
+            <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+            <div class="relative flex grow flex-col gap-y-5 overflow-y-auto border-r border-white/10 bg-gray-900 px-6 before:pointer-events-none before:absolute before:inset-0 before:bg-black/10">
+              <div class="relative flex h-16 shrink-0 items-center">
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
+              </div>
+              <nav class="relative flex flex-1 flex-col">
+                <ul role="list" class="flex flex-1 flex-col gap-y-7">
+                  <li>
+                    <ul role="list" class="-mx-2 space-y-1">
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/races" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
+          Upcoming Races
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/individual_races" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M634.92 462.7l-288-448C341.03 5.54 330.89 0 320 0s-21.03 5.54-26.92 14.7l-288 448a32.001 32.001 0 0 0-1.17 32.64A32.004 32.004 0 0 0 32 512h576c11.71 0 22.48-6.39 28.09-16.67a31.983 31.983 0 0 0-1.17-32.63zM61.31 464l131.77-204.98L256 321.94 329.94 248h109.9L578.7 464H61.31zM320 61.59L408.98 200h-98.92L256 254.06l-36.36-36.36L320 61.59z"/></svg>
+          Races
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/locations" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z"/></svg>
+          Locations
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/race_companies" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"/></svg>
+          Race Companies
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/guides" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M561.91 0C549.44 0 406.51 6.49 320 56.89 233.49 6.49 90.56 0 78.09 0 35.03 0 0 34.34 0 76.55v313.72c0 40.73 32.47 74.3 73.92 76.41 36.78 1.91 128.81 9.5 187.73 38.69 8.19 4.05 17.25 6.29 26.34 6.58v.05h64.02v-.05c9.09-.29 18.15-2.53 26.34-6.58 58.92-29.19 150.95-36.78 187.73-38.69C607.53 464.57 640 431 640 390.27V76.55C640 34.34 604.97 0 561.91 0zM296 438.15c0 11.09-10.96 18.91-21.33 14.96-64.53-24.54-153.96-32.07-198.31-34.38-15.9-.8-28.36-13.3-28.36-28.46V76.55C48 60.81 61.5 48 78.06 48c19.93.1 126.55 7.81 198.53 40.49 11.63 5.28 19.27 16.66 19.28 29.44L296 224v214.15zm296-47.88c0 15.16-12.46 27.66-28.36 28.47-44.35 2.3-133.78 9.83-198.31 34.38-10.37 3.94-21.33-3.87-21.33-14.96V224l.14-106.08c.02-12.78 7.65-24.15 19.28-29.44C435.4 55.81 542.02 48.1 561.94 48 578.5 48 592 60.81 592 76.55v313.72z"/></svg>
+          Guide
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <div class="flex items-center py-2">
+          <div aria-hidden="true" class="w-full border-t border-gray-600"></div>
+        </div>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/books" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M575.11 443.25L461.51 19.06C458.2 6.7 445.61-3.18 430.15.96L414.7 5.1c-6.18 1.66-11.53 6.4-16.06 14.24-14.03 6.94-52.3 17.21-68 18.22-7.84-4.53-14.85-5.96-21.03-4.3l-15.46 4.14c-2.42.65-4.2 1.95-6.15 3.08V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v64h128l101.66 396.94c3.31 12.36 15.9 22.24 31.36 18.1l15.45-4.14c6.18-1.66 11.53-6.4 16.06-14.24 13.91-6.88 52.18-17.2 68-18.22 7.84 4.53 14.85 5.96 21.03 4.3l15.46-4.14c15.45-4.14 21.41-18.99 18.09-31.35zm-134.4-7.06L348.64 92.37l61.82-16.56 92.07 343.82-61.82 16.56zM0 384h128V128H0v256zM96 0H32C14.33 0 0 14.33 0 32v64h128V32c0-17.67-14.33-32-32-32zM0 480c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H0v64zm160-96h128V128H160v256zm0 96c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H160v64z"/></svg>
+          Books
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/authors" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M240 208a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm208 176V16a16 16 0 0 0-16-16H80A80 80 0 0 0 0 80v352a80 80 0 0 0 80 80h352a16 16 0 0 0 16-16v-16a16 16 0 0 0-12.9-15.7c-4.2-13-4.2-51.6 0-64.6A16 16 0 0 0 448 384zm-54 80H80a32 32 0 0 1 0-64h314c-2.7 17.3-2.7 46.7 0 64zm6-112H80a79.37 79.37 0 0 0-32 6.7V80a32 32 0 0 1 32-32h320zm-256-32h192a16 16 0 0 0 16-16v-22.4c0-31.81-30.09-57.6-67.2-57.6h-4.95a103.25 103.25 0 0 1-79.7 0h-5c-37.11 0-67.2 25.79-67.2 57.6V304A16 16 0 0 0 144 320z"/></svg>
+          Authors
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <div class="flex items-center py-2">
+          <div aria-hidden="true" class="w-full border-t border-gray-600"></div>
+        </div>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/posts" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M491.609 73.625l-53.861-53.839c-26.378-26.379-69.076-26.383-95.46-.001L24.91 335.089.329 484.085c-2.675 16.215 11.368 30.261 27.587 27.587l148.995-24.582 315.326-317.378c26.33-26.331 26.581-68.879-.628-96.087zM120.644 302l170.259-169.155 88.251 88.251L210 391.355V350h-48v-48h-41.356zM82.132 458.132l-28.263-28.263 12.14-73.587L84.409 338H126v48h48v41.59l-18.282 18.401-73.586 12.141zm378.985-319.533l-.051.051-.051.051-48.03 48.344-88.03-88.03 48.344-48.03.05-.05.05-.05c9.147-9.146 23.978-9.259 33.236-.001l53.854 53.854c9.878 9.877 9.939 24.549.628 33.861z"/></svg>
+          My Writings
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                        <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
+          Interesting
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+
+    <!-- Static sidebar for desktop -->
+    <div class="hidden bg-gray-900 ring-1 ring-white/10 lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <!-- Sidebar component, swap this element with another sidebar if you like -->
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-black/10 px-6 pb-4">
+        <div class="flex h-16 shrink-0 items-center">
+          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
+        </div>
+        <nav class="flex flex-1 flex-col">
+          <ul role="list" class="flex flex-1 flex-col gap-y-7">
+            <li>
+              <ul role="list" class="-mx-2 space-y-1">
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/races" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
+          Upcoming Races
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/individual_races" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M634.92 462.7l-288-448C341.03 5.54 330.89 0 320 0s-21.03 5.54-26.92 14.7l-288 448a32.001 32.001 0 0 0-1.17 32.64A32.004 32.004 0 0 0 32 512h576c11.71 0 22.48-6.39 28.09-16.67a31.983 31.983 0 0 0-1.17-32.63zM61.31 464l131.77-204.98L256 321.94 329.94 248h109.9L578.7 464H61.31zM320 61.59L408.98 200h-98.92L256 254.06l-36.36-36.36L320 61.59z"/></svg>
+          Races
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/locations" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z"/></svg>
+          Locations
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/race_companies" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"/></svg>
+          Race Companies
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/guides" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M561.91 0C549.44 0 406.51 6.49 320 56.89 233.49 6.49 90.56 0 78.09 0 35.03 0 0 34.34 0 76.55v313.72c0 40.73 32.47 74.3 73.92 76.41 36.78 1.91 128.81 9.5 187.73 38.69 8.19 4.05 17.25 6.29 26.34 6.58v.05h64.02v-.05c9.09-.29 18.15-2.53 26.34-6.58 58.92-29.19 150.95-36.78 187.73-38.69C607.53 464.57 640 431 640 390.27V76.55C640 34.34 604.97 0 561.91 0zM296 438.15c0 11.09-10.96 18.91-21.33 14.96-64.53-24.54-153.96-32.07-198.31-34.38-15.9-.8-28.36-13.3-28.36-28.46V76.55C48 60.81 61.5 48 78.06 48c19.93.1 126.55 7.81 198.53 40.49 11.63 5.28 19.27 16.66 19.28 29.44L296 224v214.15zm296-47.88c0 15.16-12.46 27.66-28.36 28.47-44.35 2.3-133.78 9.83-198.31 34.38-10.37 3.94-21.33-3.87-21.33-14.96V224l.14-106.08c.02-12.78 7.65-24.15 19.28-29.44C435.4 55.81 542.02 48.1 561.94 48 578.5 48 592 60.81 592 76.55v313.72z"/></svg>
+          Guide
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <div class="flex items-center py-2">
+          <div aria-hidden="true" class="w-full border-t border-gray-600"></div>
+        </div>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/books" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M575.11 443.25L461.51 19.06C458.2 6.7 445.61-3.18 430.15.96L414.7 5.1c-6.18 1.66-11.53 6.4-16.06 14.24-14.03 6.94-52.3 17.21-68 18.22-7.84-4.53-14.85-5.96-21.03-4.3l-15.46 4.14c-2.42.65-4.2 1.95-6.15 3.08V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v64h128l101.66 396.94c3.31 12.36 15.9 22.24 31.36 18.1l15.45-4.14c6.18-1.66 11.53-6.4 16.06-14.24 13.91-6.88 52.18-17.2 68-18.22 7.84 4.53 14.85 5.96 21.03 4.3l15.46-4.14c15.45-4.14 21.41-18.99 18.09-31.35zm-134.4-7.06L348.64 92.37l61.82-16.56 92.07 343.82-61.82 16.56zM0 384h128V128H0v256zM96 0H32C14.33 0 0 14.33 0 32v64h128V32c0-17.67-14.33-32-32-32zM0 480c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H0v64zm160-96h128V128H160v256zm0 96c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H160v64z"/></svg>
+          Books
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/authors" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M240 208a64 64 0 1 0-64-64 64 64 0 0 0 64 64zm208 176V16a16 16 0 0 0-16-16H80A80 80 0 0 0 0 80v352a80 80 0 0 0 80 80h352a16 16 0 0 0 16-16v-16a16 16 0 0 0-12.9-15.7c-4.2-13-4.2-51.6 0-64.6A16 16 0 0 0 448 384zm-54 80H80a32 32 0 0 1 0-64h314c-2.7 17.3-2.7 46.7 0 64zm6-112H80a79.37 79.37 0 0 0-32 6.7V80a32 32 0 0 1 32-32h320zm-256-32h192a16 16 0 0 0 16-16v-22.4c0-31.81-30.09-57.6-67.2-57.6h-4.95a103.25 103.25 0 0 1-79.7 0h-5c-37.11 0-67.2 25.79-67.2 57.6V304A16 16 0 0 0 144 320z"/></svg>
+          Authors
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <div class="flex items-center py-2">
+          <div aria-hidden="true" class="w-full border-t border-gray-600"></div>
+        </div>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/posts" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M491.609 73.625l-53.861-53.839c-26.378-26.379-69.076-26.383-95.46-.001L24.91 335.089.329 484.085c-2.675 16.215 11.368 30.261 27.587 27.587l148.995-24.582 315.326-317.378c26.33-26.331 26.581-68.879-.628-96.087zM120.644 302l170.259-169.155 88.251 88.251L210 391.355V350h-48v-48h-41.356zM82.132 458.132l-28.263-28.263 12.14-73.587L84.409 338H126v48h48v41.59l-18.282 18.401-73.586 12.141zm378.985-319.533l-.051.051-.051.051-48.03 48.344-88.03-88.03 48.344-48.03.05-.05.05-.05c9.147-9.146 23.978-9.259 33.236-.001l53.854 53.854c9.878 9.877 9.939 24.549.628 33.861z"/></svg>
+          My Writings
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                  <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
+          Interesting
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Responsive Header -->
+    <!-- The sidebar menu will display here. -->
+    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-gray-900 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+      <button type="button" command="show-modal" commandfor="sidebar" class="-m-2.5 p-2.5 text-gray-400 hover:text-white lg:hidden">
+        <span class="sr-only">Open sidebar</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="flex-1 text-sm/6 font-semibold text-white">2026</div>
+      <a href="#">
+        <span class="sr-only">Your profile</span>
+        <img class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" src="/assets/profile-3fe03124.jpg" />
+      </a>
+    </div>
+
+    <div class="lg:pl-72">
+      <div>
+        <img class="h-32 w-full object-cover lg:h-48" src="/assets/pikes-peak-bfd31662.png" />
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+            <div class="flex">
+              <img class="size-24 rounded-full ring-4 ring-white sm:size-32" src="/assets/profile-3fe03124.jpg" />
+            </div>
+            <div class="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+              <div class="mt-6 min-w-0 flex-1 sm:hidden md:block">
+                <h1 class="truncate text-2xl font-bold text-gray-900">Your First 100 Miler</h1>
+              </div>
+              <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+<!--                <button type="button" class="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50">-->
+<!--                  <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="mr-1.5 -ml-0.5 size-5 text-gray-400">-->
+<!--                    <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />-->
+<!--                    <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />-->
+<!--                  </svg>-->
+<!--                  <span>Message</span>-->
+<!--                </button>-->
+<!--                <button type="button" class="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50">-->
+<!--                  <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="mr-1.5 -ml-0.5 size-5 text-gray-400">-->
+<!--                    <path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd" fill-rule="evenodd" />-->
+<!--                  </svg>-->
+<!--                  <span>Call</span>-->
+<!--                </button>-->
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 hidden min-w-0 flex-1 sm:block md:hidden">
+            <h1 class="truncate text-2xl font-bold text-gray-900">Ricardo Cooper</h1>
+          </div>
+        </div>
+      </div>
+
+      <main class="py-10">
+        <div class="px-4 sm:px-6 lg:px-8">
+          <!-- Breadcrumbs -->
+            <nav aria-label="Breadcrumb" class="flex max-w-4xl mx-auto px-2">
+              <ol role="list" class="flex items-center space-x-4">
+                <li>
+                  <div>
+                    <a href="/" class="text-gray-400 hover:text-gray-500">
+                      <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0">
+                        <path d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" fill-rule="evenodd" />
+                      </svg>
+                      <span class="sr-only">Home</span>
+                    </a>
+                  </div>
+                </li>
+                  <li>
+                    <div class="flex items-center">
+                      <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
+                        <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                      </svg>
+                      <a href="/tags" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Tags</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex items-center">
+                      <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
+                        <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                      </svg>
+                      <a href="/tags/89178830" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">2026</a>
+                    </div>
+                  </li>
+              </ol>
+            </nav>
+
+          <!-- BEGIN app/views/content/tags/show.html.erb
+--><!-- BEGIN app/components/article.rb
+-->    <article class="max-w-4xl mx-auto mt-4 px-2 md:mt-8">
+      
+  <!-- BEGIN app/components/h1.rb
+-->    <h1 id="2026" class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
+      2026
+    </h1>
+<!-- END app/components/h1.rb -->
+
+  <!-- BEGIN app/components/content_container.rb
+-->    <div class="my-4 md:my-8">
+      
+
+    </div>
+<!-- END app/components/content_container.rb -->
+    <!-- BEGIN app/components/h2.rb
+-->    <h2 id="books" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Books
+    </h2>
+<!-- END app/components/h2.rb -->
+
+    <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg"><table class="relative min-w-full divide-y divide-gray-300">
+  <thead>
+    <tr class="even:bg-gray-50">
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Title</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Author</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Started</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Finished</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Pages</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/the-starving-saints-a-dark-medieval-tale-of-survival-divine-intervention-and-unraveling-mysteries-amidst-a-castles-descent-into-madness-perfect-for-summer-reading">The Starving Saints: A Dark Medieval Tale of Survival, Divine Intervention, and Unraveling Mysteries Amidst a Castle’s Descent into Madness―Perfect for Summer Reading</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/caitlin-starling">Caitlin Starling</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">02/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">02/16/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-200-400">352</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/pages-200-400">Between 200 and 400 Pages</a>, <a href="/tags/first-edition">First Edition</a>, <a href="/tags/hardcover">Hardcover</a>, <a href="/tags/horror">Horror</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/the-only-one-left-a-novel">The Only One Left: A Novel</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/riley-sager">Riley Sager</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/31/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">02/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-200-400">400</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/pages-200-400">Between 200 and 400 Pages</a>, <a href="/tags/hardcover">Hardcover</a>, <a href="/tags/horror">Horror</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/earth-logic-an-elemental-logic-novel">Earth Logic: An Elemental Logic novel</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/laurie-j-marks">Laurie J. Marks</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/31/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-gt-400">444</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/fantasy">Fantasy</a>, <a href="/tags/first-edition">First Edition</a>, <a href="/tags/indie">Indie</a>, <a href="/tags/pages-gt-400">More Than 400 Pages</a>, <a href="/tags/paperback">Paperback</a>, <a href="/tags/series">Series</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/down">Down</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/ally-blue">Ally Blue</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-200-400">314</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/pages-200-400">Between 200 and 400 Pages</a>, <a href="/tags/first-edition">First Edition</a>, <a href="/tags/horror">Horror</a>, <a href="/tags/indie">Indie</a>, <a href="/tags/paperback">Paperback</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/the-graceview-patient-a-novel">The Graceview Patient: A Novel</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/caitlin-starling">Caitlin Starling</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2025">12/30/2025</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">01/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-200-400">297</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2025">2025</a>, <a href="/tags/2026">2026</a>, <a href="/tags/pages-200-400">Between 200 and 400 Pages</a>, <a href="/tags/first-edition">First Edition</a>, <a href="/tags/hardcover">Hardcover</a>, <a href="/tags/horror">Horror</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/books/orbital-a-novel-booker-prize-winner">Orbital: A Novel (Booker Prize Winner)</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/authors/samantha-harvey">Samantha Harvey</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">02/16/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-200-400">224</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/pages-200-400">Between 200 and 400 Pages</a>, <a href="/tags/paperback">Paperback</a>, <a href="/tags/science-fiction">Science Fiction</a>, <a href="/tags/short-stories">Short Stories</a>
+</td>
+    </tr>
+  </tbody>
+</table></div>
+
+
+
+
+    <!-- BEGIN app/components/h2.rb
+-->    <h2 id="races" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Races
+    </h2>
+<!-- END app/components/h2.rb -->
+
+    <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg"><table class="relative min-w-full divide-y divide-gray-300">
+  <thead>
+    <tr class="even:bg-gray-50">
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Date</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Race</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Distance</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Elevation Gain</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Location</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Race Company</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Running</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">02/14/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/rocky-raccoon-50-miler">Rocky Raccoon 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/huntsville-tx">Huntsville, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tejas-trails">Tejas Trails</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/huntsville-tx">Huntsville, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">03/14/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/run-through-time-trail-marathon">Run Through Time Trail Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">Marathon</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,800 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/salida-co">Salida, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-red-50 text-red-700 inset-ring-red-600/10 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Running</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/running">Running</a>, <a href="/tags/salida-co">Salida, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">03/21/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/grasslands-50-miler">Grasslands 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/alvord-tx">Alvord, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/blaze-trails">Blaze Trails</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/alvord-tx">Alvord, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">04/11/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/desert-rats-trail-running-festival-100k">Desert Rats Trail Running Festival 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">62.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,725 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">04/11/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/desert-rats-trail-running-festival-50k">Desert Rats Trail Running Festival 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">29.8 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,444 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">04/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/rattler-trail-race-50k">Rattler Trail Race 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,838 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Maybe</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">04/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/cheyenne-mountain-trail-race-50k">Cheyenne Mountain Trail Race 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">04/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/royal-gorge-groove-50k">Royal Gorge Groove 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,532 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/canon-city-co">Cañon City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Maybe</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/02/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/greenland-trail-races-50k">Greenland Trail Races 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2,226 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/larkspur-co">Larkspur, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/larkspur-co">Larkspur, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/collegiate-peaks-50-miler">Collegiate Peaks 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50.6 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,028 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buena-vista-co">Buena Vista, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/buena-vista-co">Buena Vista, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/09/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/jemez-mountain-trail-run-50-miler">Jemez Mountain Trail Run 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">52.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">10,981 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/los-alamos-nm">Los Alamos, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/los-alamos-nm">Los Alamos, NM</a>, <a href="/tags/nm">New Mexico</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/09/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/quad-rock-50">Quad Rock 50</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fort-collins-co">Fort Collins, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Maybe</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fort-collins-co">Fort Collins, CO</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/09/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/jemez-mountain-trail-run-50k">Jemez Mountain Trail Run 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.6 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5,869 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/los-alamos-nm">Los Alamos, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/los-alamos-nm">Los Alamos, NM</a>, <a href="/tags/nm">New Mexico</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/09/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/quad-rock-25">Quad Rock 25</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">25 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fort-collins-co">Fort Collins, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Maybe</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fort-collins-co">Fort Collins, CO</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/16/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ram-party-trail-runs-55-miler">Ram Party Trail Runs 55 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">53.9 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,964 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Maybe</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/16/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ram-party-trail-runs-60k">Ram Party Trail Runs 60k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">38 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,279 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/16/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ram-party-trail-runs-50k">Ram Party Trail Runs 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">30.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,412 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/30/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/north-fork-50-miler">North Fork 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,425 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buffalo-creek-co">Buffalo Creek, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/buffalo-creek-co">Buffalo Creek, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">05/30/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/north-fork-50k">North Fork 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,670 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buffalo-creek-co">Buffalo Creek, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/buffalo-creek-co">Buffalo Creek, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/05/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/scout-mountain-100-miler">Scout Mountain 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">21,581 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pocatello-id">Pocatello, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/pocatello-id">Pocatello, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/scout-mountain-50k">Scout Mountain 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,503 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pocatello-id">Pocatello, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/pocatello-id">Pocatello, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/scout-mountain-50-miler">Scout Mountain 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,325 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pocatello-id">Pocatello, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/pocatello-id">Pocatello, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-great-divide-ultra-100k">The Great Divide Ultra 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/divide-co">Divide, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/100k">100k</a>, <a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/divide-co">Divide, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/06/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-great-divide-ultra-100-miler">The Great Divide Ultra 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">16,071 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/divide-co">Divide, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/divide-co">Divide, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-great-divide-ultra-50k">The Great Divide Ultra 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,200 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/divide-co">Divide, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/divide-co">Divide, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/maces-hideout-100">Mace’s Hideout 100</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">22,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beulah-co">Beulah, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tempest-adventures">Tempest Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-red-50 text-red-700 inset-ring-red-600/10 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Running</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beulah-co">Beulah, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/running">Running</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/13/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/barr-lake-trail-race-50k">Barr Lake Trail Race 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">480.0 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/brighton-co">Brighton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/brighton-co">Brighton, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/20/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ring-the-springs-100k">Ring the Springs 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">64 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,065 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/20/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/san-juan-solstice-50-miler">San Juan Solstice 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">12,856 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lake-city-co">Lake City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lake-city-co">Lake City, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">06/20/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ring-the-springs-50k">Ring the Springs 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">32.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5,115 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/10/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverheels-100k">Silverheels 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">63.4 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">12,475 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/como-co">Como, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/10/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverheels-50-miler">Silverheels 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">53.8 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">9,266 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/como-co">Como, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/10/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverheels-60k">Silverheels 60k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">38.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,023 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/como-co">Como, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/10/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverheels-100-miler">Silverheels 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">106.5 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">19,310 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/como-co">Como, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/11/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/devils-gulch-50-miler">Devil’s Gulch 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/wenatchee-wa">Wenatchee, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/evergreen-trail-runs">Evergreen Trail Runs</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/wa">Washington</a>, <a href="/tags/wenatchee-wa">Wenatchee, WA</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/11/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silver-rush-50-miler">Silver Rush 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">48.4 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,503 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/leadville-co">Leadville, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/leadville-co">Leadville, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/11/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/devils-gulch-100-miler">Devil’s Gulch 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">20,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/wenatchee-wa">Wenatchee, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/evergreen-trail-runs">Evergreen Trail Runs</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/wa">Washington</a>, <a href="/tags/wenatchee-wa">Wenatchee, WA</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ouray-100-miler">Ouray 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">102.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">41,862 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/ouray-co">Ouray, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/ouray-co">Ouray, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/cascade-crest-100-miler">Cascade Crest 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">23,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/easton-wa">Easton, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/easton-wa">Easton, WA</a>, <a href="/tags/wa">Washington</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/high-lonesome-100-miler">High Lonesome 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">23,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buena-vista-co">Buena Vista, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/freestone-endurance">Freestone Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/buena-vista-co">Buena Vista, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverton-alpine-marathon">Silverton Alpine Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">Marathon</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,911 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/silverton-co">Silverton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/silverton-co">Silverton, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/silverton-alpine-50k">Silverton Alpine 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,569 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/silverton-co">Silverton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/silverton-co">Silverton, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/24/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/never-summer-100k">Never Summer 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">65.7 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">14,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/gould-co">Gould, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gould-co">Gould, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/24/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/never-summer-50k">Never Summer 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">39.2 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,800 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/gould-co">Gould, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gould-co">Gould, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/creede-50-miler">Creede 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">51.5 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">9,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/creede-co">Creede, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tempest-adventures">Tempest Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/creede-co">Creede, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/grand-mesa-ultras-55k">Grand Mesa Ultras 55k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,376 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/grand-mesa-co">Grand Mesa, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/grand-mesa-co">Grand Mesa, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/pikes-peak-ultra-50k">Pikes Peak Ultra 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,127 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/grand-mesa-ultras-50-miler">Grand Mesa Ultras 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,971 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/grand-mesa-co">Grand Mesa, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/grand-mesa-co">Grand Mesa, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/pikes-peak-ultra-50-miler">Pikes Peak Ultra 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,759 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/enchanted-forest-trail-races-marathon">Enchanted Forest Trail Races Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">26.6 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,065 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/red-river-nm">Red River, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gemini-adventures">Gemini Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/nm">New Mexico</a>, <a href="/tags/red-river-nm">Red River, NM</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">07/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/creede-100-miler">Creede 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">106.5 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">20,822 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/creede-co">Creede, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tempest-adventures">Tempest Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/creede-co">Creede, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/tushars-100k">Tushars 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">63.7 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">16,392 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beaver-ut">Beaver, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beaver-ut">Beaver, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sheep-mountain-50-miler">Sheep Mountain 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">53.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">9,277 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fairplay-co">Fairplay, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fairplay-co">Fairplay, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/winter-park-trail-runs-50k">Winter Park Trail Runs 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/winter-park-co">Winter Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gemini-adventures">Gemini Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/winter-park-co">Winter Park, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/tushars-70k">Tushars 70k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">45.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">11,720 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beaver-ut">Beaver, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beaver-ut">Beaver, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sheep-mountain-50k">Sheep Mountain 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">33 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,354 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fairplay-co">Fairplay, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fairplay-co">Fairplay, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/01/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/tushars-marathon">Tushars Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">26.7 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,850 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beaver-ut">Beaver, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beaver-ut">Beaver, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/wyoming-range-100-miler">Wyoming Range 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">108 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">24,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/hoback-wy">Hoback, WY</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/hoback-wy">Hoback, WY</a>, <a href="/tags/wy">Wyoming</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/08/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ute-50-miler">Ute 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">12,175 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/la-sal-ut">La Sal, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/la-sal-ut">La Sal, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/08/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/ute-100-miler">Ute 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">23,356 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/la-sal-ut">La Sal, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/la-sal-ut">La Sal, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/14/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/san-juan-softie-100-miler">San Juan Softie 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">19,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/durango-co">Durango, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/durango-co">Durango, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/22/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/telluride-mountain-run-100k">Telluride Mountain Run 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">65 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">22,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/telluride-co">Telluride, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-red-50 text-red-700 inset-ring-red-600/10 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Running</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/running">Running</a>, <a href="/tags/telluride-co">Telluride, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/22/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/telluride-mountain-run-40-miler">Telluride Mountain Run 40 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">40 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">14,035 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/telluride-co">Telluride, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/telluride-co">Telluride, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/22/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/staunton-rocks-marathon">Staunton Rocks! Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">26.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pine-co">Pine, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/pine-co">Pine, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/23/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/westminster-trail-race-50k">Westminster Trail Race 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2,358 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westminster-co">Westminster, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westminster-co">Westminster, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/29/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/continental-divide-trail-run-50k">Continental Divide Trail Run 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">30.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5,592 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/steamboat-springs-co">Steamboat Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/steamboat-springs-co">Steamboat Springs, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">08/30/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/creede-mountain-runs-50k">Creede Mountain Runs 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/creede-co">Creede, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/creede-co">Creede, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/05/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-grand-traverse-40-miler">The Grand Traverse 40 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">39.8 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,730 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/crested-butte-co">Crested Butte, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/crested-butte-co">Crested Butte, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/12/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/snow-mountain-ranch-trail-running-festival-50k">Snow Mountain Ranch Trail Running Festival 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.4 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,236 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/granby-co">Granby, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/granby-co">Granby, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/12/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/devil-on-the-divide-50k">Devil on the Divide 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">29.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,024 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/empire-co">Empire, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/empire-co">Empire, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/run-rabbit-run-50-miler">Run Rabbit Run 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,090 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/steamboat-springs-co">Steamboat Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/steamboat-springs-co">Steamboat Springs, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/18/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/run-rabbit-run-100-miler">Run Rabbit Run 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">16,556 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/steamboat-springs-co">Steamboat Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/steamboat-springs-co">Steamboat Springs, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/19/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/imtuf-100-miler">IMTUF 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">100 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">22,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/mccall-id">McCall, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/mccall-id">McCall, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/red-feather-trail-jamboree-50k">Red Feather Trail Jamboree 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,200 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/red-feather-lakes-co">Red Feather Lakes, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/red-feather-lakes-co">Red Feather Lakes, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/25/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/red-feather-trail-jamboree-50-miler">Red Feather Trail Jamboree 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/red-feather-lakes-co">Red Feather Lakes, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/red-feather-lakes-co">Red Feather Lakes, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sangre-de-cristo-trail-festival-100k">Sangre de Cristo Trail Festival 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">59.2 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">12,811 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sangre-de-cristo-trail-festival-50-miler">Sangre de Cristo Trail Festival 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50.6 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">10,705 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/crested-butte-ultra-50-miler">Crested Butte Ultra 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8,301 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/crested-butte-co">Crested Butte, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/crested-butte-co">Crested Butte, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/crested-butte-ultra-55k">Crested Butte Ultra 55k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">34.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,567 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/crested-butte-co">Crested Butte, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/crested-butte-co">Crested Butte, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sangre-de-cristo-trail-festival-50k">Sangre de Cristo Trail Festival 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">33 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,632 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/26/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sangre-de-cristo-trail-festival-100-miler">Sangre de Cristo Trail Festival 100 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">101.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">18,897 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/27/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sawatch-ascent-50k">Sawatch Ascent 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,000 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/nathrop-co">Nathrop, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/freestone-endurance">Freestone Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/nathrop-co">Nathrop, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">09/27/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/west-line-winder-50k">West Line Winder 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,300 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buena-vista-co">Buena Vista, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/freestone-endurance">Freestone Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/buena-vista-co">Buena Vista, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/colorado-springs-marathon">Colorado Springs Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">Marathon</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">753.0 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-bear-chase-100k">The Bear Chase 100k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">62.2 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,336 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lakewood-co">Lakewood, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lakewood-co">Lakewood, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/above-the-clouds-50k">Above the Clouds 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,137 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/woodland-park-co">Woodland Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/woodland-park-co">Woodland Park, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sage-burner-trail-race-50k">Sage Burner Trail Race 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,265 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/gunnison-co">Gunnison, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/one-love-endurance">One Love Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gunnison-co">Gunnison, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-bear-chase-50-miler">The Bear Chase 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,470 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lakewood-co">Lakewood, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lakewood-co">Lakewood, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/03/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/the-bear-chase-50k">The Bear Chase 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2,036 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lakewood-co">Lakewood, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lakewood-co">Lakewood, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/blue-sky-marathon">Blue Sky Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">Marathon</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,500 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fort-collins-co">Fort Collins, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fort-collins-co">Fort Collins, CO</a>, <a href="/tags/marathon">Marathon</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/indian-creek-trail-runs-50-miler">Indian Creek Trial Runs 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">51.9 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">10,585 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/sedalia-co">Sedalia, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/sedalia-co">Sedalia, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/bobcat-trail-races-50k">Bobcat Trail Races 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,591 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/17/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/indian-creek-trail-runs-55k">Indian Creek Trial Runs 55k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">34.1 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7,302 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/sedalia-co">Sedalia, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/sedalia-co">Sedalia, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/24/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/bridge-burner-50k">Bridge Burner 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,200 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/canon-city-co">Cañon City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">10/24/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/bridge-burner-35-miler">Bridge Burner 35 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">36.95 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,400 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/canon-city-co">Cañon City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">11/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/kessel-run-ultra-50k">Kessel Run Ultra 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50k</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3,438 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">11/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/kessel-run-ultra-50-miler">Kessel Run Ultra 50 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">50 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5,177 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">11/07/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/kessel-run-ultra-40-miler">Kessel Run Ultra 40 Miler</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">40 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,090 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">11/21/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/colorado-cold-rush-50k">Colorado Cold Rush 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">31.34 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4,204 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><span class="bg-red-50 text-red-700 inset-ring-red-600/10 inline-flex items-center rounded-full px-1.5 py-0.5 text-xs font-medium inset-ring">Running</span></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/running">Running</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/2026">12/05/2026</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/individual_races/sawmill-trail-runs-50k">Sawmill Trail Runs 50k</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">32.3 miles</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">6,088 feet</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pine-co">Pine, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"> </td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/pine-co">Pine, CO</a>
+</td>
+    </tr>
+  </tbody>
+</table></div>
+
+
+    <!-- BEGIN app/components/h2.rb
+-->    <h2 id="race-companies" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Race Companies
+    </h2>
+<!-- END app/components/h2.rb -->
+
+    <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg"><table class="relative min-w-full divide-y divide-gray-300">
+  <thead>
+    <tr class="even:bg-gray-50">
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Race Company</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Number of Races</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Race Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/aravaipa-running">Aravaipa Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">20</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/beaver-ut">Beaver, UT</a>, <a href="/tags/brighton-co">Brighton, CO</a>, <a href="/tags/buffalo-creek-co">Buffalo Creek, CO</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/granby-co">Granby, CO</a>, <a href="/tags/lakewood-co">Lakewood, CO</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/maybe">Maybe</a>, <a href="/tags/silverton-co">Silverton, CO</a>, <a href="/tags/ut">Utah</a>, <a href="/tags/westminster-co">Westminster, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/blaze-trails">Blaze Trails</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/alvord-tx">Alvord, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/evergreen-trail-runs">Evergreen Trail Runs</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/wa">Washington</a>, <a href="/tags/wenatchee-wa">Wenatchee, WA</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/freestone-endurance">Freestone Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/buena-vista-co">Buena Vista, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/nathrop-co">Nathrop, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gemini-adventures">Gemini Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/nm">New Mexico</a>, <a href="/tags/red-river-nm">Red River, NM</a>, <a href="/tags/winter-park-co">Winter Park, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/gnar-runners">Gnar Runners</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">7</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fort-collins-co">Fort Collins, CO</a>, <a href="/tags/gould-co">Gould, CO</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/maybe">Maybe</a>, <a href="/tags/pine-co">Pine, CO</a>, <a href="/tags/red-feather-lakes-co">Red Feather Lakes, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/human-potential-running">Human Potential Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">13</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>, <a href="/tags/fairplay-co">Fairplay, CO</a>, <a href="/tags/pine-co">Pine, CO</a>, <a href="/tags/sedalia-co">Sedalia, CO</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/mad-moose-events">Mad Moose Events</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">8</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/crested-butte-co">Crested Butte, CO</a>, <a href="/tags/fruita-co">Fruita, CO</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/one-love-endurance">One Love Endurance</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gunnison-co">Gunnison, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/revenant-running">Revenant Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">13</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/100k">100k</a>, <a href="/tags/2023">2023</a>, <a href="/tags/2024">2024</a>, <a href="/tags/2025">2025</a>, <a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/divide-co">Divide, CO</a>, <a href="/tags/la-sal-ut">La Sal, UT</a>, <a href="/tags/ran">Ran</a>, <a href="/tags/running">Running</a>, <a href="/tags/ut">Utah</a>, <a href="/tags/woodland-park-co">Woodland Park, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tejas-trails">Tejas Trails</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/huntsville-tx">Huntsville, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/race_companies/tempest-adventures">Tempest Adventures</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beulah-co">Beulah, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/creede-co">Creede, CO</a>, <a href="/tags/running">Running</a>
+</td>
+    </tr>
+  </tbody>
+</table></div>
+
+
+    <!-- BEGIN app/components/h2.rb
+-->    <h2 id="locations" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Locations
+    </h2>
+<!-- END app/components/h2.rb -->
+
+    <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg"><table class="relative min-w-full divide-y divide-gray-300">
+  <thead>
+    <tr class="even:bg-gray-50">
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Title</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Number of Races</th>
+      <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/alvord-tx">Alvord, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/alvord-tx">Alvord, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beaver-ut">Beaver, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beaver-ut">Beaver, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/beulah-co">Beulah, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/beulah-co">Beulah, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/running">Running</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/brighton-co">Brighton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/brighton-co">Brighton, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buena-vista-co">Buena Vista, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/buena-vista-co">Buena Vista, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/buffalo-creek-co">Buffalo Creek, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/buffalo-creek-co">Buffalo Creek, CO</a>, <a href="/tags/co">Colorado</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/canon-city-co">Cañon City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2024">2024</a>, <a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/canon-city-co">Cañon City, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/maybe">Maybe</a>, <a href="/tags/ran">Ran</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/colorado-springs-co">Colorado Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">15</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2023">2023</a>, <a href="/tags/2024">2024</a>, <a href="/tags/2025">2025</a>, <a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/colorado-springs-co">Colorado Springs, CO</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/maybe">Maybe</a>, <a href="/tags/ran">Ran</a>, <a href="/tags/running">Running</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/como-co">Como, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/como-co">Como, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/creede-co">Creede, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/creede-co">Creede, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/crested-butte-co">Crested Butte, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/crested-butte-co">Crested Butte, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/divide-co">Divide, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/100k">100k</a>, <a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/divide-co">Divide, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/durango-co">Durango, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/durango-co">Durango, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/easton-wa">Easton, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/easton-wa">Easton, WA</a>, <a href="/tags/wa">Washington</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/empire-co">Empire, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/empire-co">Empire, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fairplay-co">Fairplay, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fairplay-co">Fairplay, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fort-collins-co">Fort Collins, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fort-collins-co">Fort Collins, CO</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/maybe">Maybe</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/fruita-co">Fruita, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">5</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/fruita-co">Fruita, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/gould-co">Gould, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gould-co">Gould, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/granby-co">Granby, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/granby-co">Granby, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/grand-mesa-co">Grand Mesa, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/grand-mesa-co">Grand Mesa, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/gunnison-co">Gunnison, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/gunnison-co">Gunnison, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/hoback-wy">Hoback, WY</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/hoback-wy">Hoback, WY</a>, <a href="/tags/wy">Wyoming</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/huntsville-tx">Huntsville, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/huntsville-tx">Huntsville, TX</a>, <a href="/tags/tx">Texas</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/la-sal-ut">La Sal, UT</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/la-sal-ut">La Sal, UT</a>, <a href="/tags/ut">Utah</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lake-city-co">Lake City, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lake-city-co">Lake City, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/lakewood-co">Lakewood, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/lakewood-co">Lakewood, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/larkspur-co">Larkspur, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/larkspur-co">Larkspur, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/leadville-co">Leadville, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/leadville-co">Leadville, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/los-alamos-nm">Los Alamos, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/los-alamos-nm">Los Alamos, NM</a>, <a href="/tags/nm">New Mexico</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/mccall-id">McCall, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/mccall-id">McCall, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/nathrop-co">Nathrop, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/nathrop-co">Nathrop, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/ouray-co">Ouray, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/ouray-co">Ouray, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pine-co">Pine, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/pine-co">Pine, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/pocatello-id">Pocatello, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/id">Idaho</a>, <a href="/tags/pocatello-id">Pocatello, ID</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/red-feather-lakes-co">Red Feather Lakes, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/red-feather-lakes-co">Red Feather Lakes, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/red-river-nm">Red River, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/nm">New Mexico</a>, <a href="/tags/red-river-nm">Red River, NM</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/salida-co">Salida, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2024">2024</a>, <a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/running">Running</a>, <a href="/tags/salida-co">Salida, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/sedalia-co">Sedalia, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/sedalia-co">Sedalia, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/silverton-co">Silverton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/marathon">Marathon</a>, <a href="/tags/silverton-co">Silverton, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/steamboat-springs-co">Steamboat Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">3</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/steamboat-springs-co">Steamboat Springs, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/telluride-co">Telluride, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/running">Running</a>, <a href="/tags/telluride-co">Telluride, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/wenatchee-wa">Wenatchee, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">2</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/wa">Washington</a>, <a href="/tags/wenatchee-wa">Wenatchee, WA</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">4</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westcliffe-co">Westcliffe, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/westminster-co">Westminster, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/westminster-co">Westminster, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/winter-park-co">Winter Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/winter-park-co">Winter Park, CO</a>
+</td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/locations/woodland-park-co">Woodland Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">1</td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+<a href="/tags/2026">2026</a>, <a href="/tags/50k">50k</a>, <a href="/tags/co">Colorado</a>, <a href="/tags/woodland-park-co">Woodland Park, CO</a>
+</td>
+    </tr>
+  </tbody>
+</table></div>
+
+
+    </article>
+<!-- END app/components/article.rb --><!-- END app/views/content/tags/show.html.erb -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+<!-- END app/views/layouts/application.html.erb -->

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <generator>Perron (0.17.0)</generator>
+    <title>Your First 100 Miler</title>
+    <description/>
+    <link>http://localhost:3000/</link>
+    <item>
+      <guid>50147731</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/finally-more-skiing/</link>
+      <pubDate>Mon, 23 Feb 2026 01:31:29 +0000</pubDate>
+      <title>Finally More Skiing</title>
+      <description><![CDATA[<p>After an unfortunate number of weeks we got out for more skiing at Copper Mountain. Tiring with many runs, but felt great to be back out again.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>f798ce87</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/hanging-out/</link>
+      <pubDate>Sun, 22 Feb 2026 01:31:29 +0000</pubDate>
+      <title>Hanging Out</title>
+      <description><![CDATA[<p>Hung out with my friend Elijah. Lots of talk about games; hatching plans to create some of our own.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>ca8c3ad2</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/frustrations/</link>
+      <pubDate>Sat, 21 Feb 2026 04:01:15 +0000</pubDate>
+      <title>Frustrations</title>
+      <description><![CDATA[<p>Early meeting about auditing, leaving me no time to get Turtle to doggy daycare. Turtle was an asshole all day, compounding work frustrations.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>2e8237fd</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/meetings-and-breakings/</link>
+      <pubDate>Fri, 20 Feb 2026 03:59:43 +0000</pubDate>
+      <title>Meetings and Breakings</title>
+      <description><![CDATA[<p>Lots of meetings today, but good discussions all around, particularly the back-end discussion and coordinating with Lukan. Later went through breaks in taekwondo, where Oscar started things off strong and I crushed all of my adult boards and my simulated brick.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>a447757b</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/first-day-back/</link>
+      <pubDate>Thu, 19 Feb 2026 01:22:42 +0000</pubDate>
+      <title>First Day Back</title>
+      <description><![CDATA[<p>First day back from a vacation, even a short one, is always a challenge, with meetings, chasing information for my team, replying to emails and messages. Relaxing with Olympics.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>bf7aa102</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/driving-home/</link>
+      <pubDate>Tue, 17 Feb 2026 03:51:39 +0000</pubDate>
+      <title>Driving Home</title>
+      <description><![CDATA[<p>Long drive home today. Windy, tiring, herds of tumbleweeds and clouds of blown dirt.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>f1aae549</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/seeing-mom/</link>
+      <pubDate>Mon, 16 Feb 2026 13:24:16 +0000</pubDate>
+      <title>Seeing Mom</title>
+      <description><![CDATA[<p>Went to see mom today with flowers, crystal clear blue sky, and sadness. Lunch at Mac’s with Angy and Dad, followed by laziness and memories.</p>
+]]></description>
+    </item>
+  </channel>
+</rss>

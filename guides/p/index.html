@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -364,13 +371,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>How fast you run. Usually we measure this in minutes per mile. In general during a 100 mile <a href="/guides/r#race">race</a> your pace will be <em>much</em> slower than what you may be used to during a road <a href="/guides/r#race">race</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>How fast you run. Usually we measure this in minutes per mile. In general during a 100 mile <a href="/guides/r#race">race</a> your pace will be <em>much</em> slower than what you may be used to during a road <a href="/guides/r#race">race</a>.</p>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -379,7 +392,10 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>A runner who <a href="/guides/p#pacing">paces</a> another runner. Usually a pacer can start after 50 miles. A runner can generally have any number of pacers, but only one at a time. A pacer will need to start <a href="/guides/p#pacing">pacing</a> at an <a href="/guides/a#aid-station">aid station</a>, and not anywhere else. Generally a pacer is allowed to partake of anything they want at an <a href="/guides/a#aid-station">aid station</a>, just like their runner.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>A runner who <a href="/guides/p#pacing">paces</a> another runner. Usually a pacer can start after 50 miles. A runner can generally have any number of pacers, but only one at a time. A pacer will need to start <a href="/guides/p#pacing">pacing</a> at an <a href="/guides/a#aid-station">aid station</a>, and not anywhere else. Generally a pacer is allowed to partake of anything they want at an <a href="/guides/a#aid-station">aid station</a>, just like their runner.</p>
 
 <p>A pacer’s job is generally doing anything necessary to get their runner to the <a href="/guides/f#finish-line">finish line</a>. In addition to running with a runner, a pacer often takes on a number of other duties, such as getting food or drink for their runner at an <a href="/guides/a#aid-station">aid station</a>, helping their runner change <a href="/guides/s#shoes">shoes</a>, and anything else required to keep the runner moving. It’s often a completely thankless job. Your runner will want to sit down and not get up. They will want to <a href="/guides/d#drop">drop</a> rather than go one more step. They will throw fits. They may call you names. Keep them moving, no matter what.</p>
 
@@ -388,10 +404,13 @@
 <p>One thing a pacer cannot do is <a href="/guides/m#muling">mule</a> for their runner. That’s off limits.</p>
 
 
-      <div>
-        <p><a href="/guides/m#muling">M » Muling</a> <a href="/guides/p#pacing">P » Pacing</a> <a href="/guides/s#safety-runner">S » Safety Runner</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/m#muling">M » Muling</a> <a href="/guides/p#pacing">P » Pacing</a> <a href="/guides/s#safety-runner">S » Safety Runner</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -400,13 +419,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Running with someone to help them finish a race. See <a href="/guides/p#pacer">pacer</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Running with someone to help them finish a race. See <a href="/guides/p#pacer">pacer</a>.</p>
 
 
-      <div>
-        <p><a href="/guides/p#pacer">P » Pacer</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/p#pacer">P » Pacer</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -415,15 +440,21 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>A running backpack that lets you carry <a href="/guides/g#gear">gear</a> easily on your back. These come in all different shapes and sizes depending on your preference and distance you’re traveling. Packs commonly have the ability to store a <a href="/guides/h#hydration-bladder">hydration bladder</a> (I usually called these <a href="/guides/h#hydration-pack">hydration packs</a>) and usually have a variety of pockets for those odds and ends you might want on a long race, such as chapstick, gloves, a <a href="/guides/f#flashlight">flashlight</a> or <a href="/guides/h#headlamp">headlamp</a>, spare batteries, fuel, <a href="/guides/p#poles">poles</a>, sunglasses, etc.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>A running backpack that lets you carry <a href="/guides/g#gear">gear</a> easily on your back. These come in all different shapes and sizes depending on your preference and distance you’re traveling. Packs commonly have the ability to store a <a href="/guides/h#hydration-bladder">hydration bladder</a> (I usually called these <a href="/guides/h#hydration-pack">hydration packs</a>) and usually have a variety of pockets for those odds and ends you might want on a long race, such as chapstick, gloves, a <a href="/guides/f#flashlight">flashlight</a> or <a href="/guides/h#headlamp">headlamp</a>, spare batteries, fuel, <a href="/guides/p#poles">poles</a>, sunglasses, etc.</p>
 
 <p>Your choice of pack can have a huge impact on your enjoyment of the <a href="/guides/r#race">race</a>. A poorly fitting pack can bounce, <a href="/guides/c#chafing">chafe</a>, or otherwise be unpleasant in a large number of ways, while you might forget you’re even wearing a well-fitting pack.</p>
 
 
-      <div>
-        <p><a href="/guides/b#bodyglide">B » Bodyglide</a> <a href="/guides/h#hydration-bladder">H » Hydration Bladder</a> <a href="/guides/h#hydration-pack">H » Hydration Pack</a> <a href="/guides/p#poles">P » Poles</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/b#bodyglide">B » Bodyglide</a> <a href="/guides/h#hydration-bladder">H » Hydration Bladder</a> <a href="/guides/h#hydration-pack">H » Hydration Pack</a> <a href="/guides/p#poles">P » Poles</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -432,13 +463,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>I prefer <a href="/guides/s#shorts">shorts</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>I prefer <a href="/guides/s#shorts">shorts</a>.</p>
 
 
-      <div>
-        <p><a href="/guides/s#shorts">S » Shorts</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/s#shorts">S » Shorts</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -447,17 +484,23 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Long poles you can use when mountain running or hiking to help make climbs easier by taking some of your weight on your arms and shoulders. They can also provide balance in a variety of situations, such as when <a href="/guides/s#stream-crossing">crossing streams</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Long poles you can use when mountain running or hiking to help make climbs easier by taking some of your weight on your arms and shoulders. They can also provide balance in a variety of situations, such as when <a href="/guides/s#stream-crossing">crossing streams</a>.</p>
 
 <p>They come in a variety of sizes, with the object being you configure the pole length so your elbows are bent at 90 degrees when holding the poles in front of you. They come in different configurations, as well. Some will be a single shaft, while others can collapse for easier stowing in or on a <a href="/guides/p#pack">pack</a>, while still others telescope.</p>
 
 <p><a href="https://www.rei.com/product/202396/black-diamond-distance-z-trekking-poles">Black Diamond Distance Z Trekking Poles</a> are a popular variety of trekking poles. These are an example of poles that collapse.</p>
 
 
-      <div>
-        <p><a href="/guides/h#hiking-poles">H » Hiking Poles</a> <a href="/guides/p#pack">P » Pack</a> <a href="/guides/t#trekking-poles">T » Trekking Poles</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/h#hiking-poles">H » Hiking Poles</a> <a href="/guides/p#pack">P » Pack</a> <a href="/guides/t#trekking-poles">T » Trekking Poles</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
 
     </article>

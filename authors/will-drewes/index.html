@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -367,8 +374,9 @@
         <li>
           <!-- BEGIN app/components/quote.rb
 -->    <figure class="">
-      <blockquote class="border-l border-indigo-600 pl-8 text-base/8 font-semibold tracking-tight text-gray-900">
-        <p><p>Then AI flipped the script.</p>
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>Then AI flipped the script.</p>
 
 <p>When an LLM writes your code, the quality of constraints you give it is everything.</p>
 
@@ -377,16 +385,21 @@
 <p>And DDD? That’s the big one.</p>
 
 <p>Bounded contexts tell the AI what it should and shouldn’t touch. Aggregates define transactional boundaries. Ubiquitous language means the LLM and your team speak the same vocabulary.</p>
-</p>
+
       </blockquote>
-      <figcaption class="mt-2 flex gap-x-4">
+      
+      <figcaption class="flex gap-x-2 mt-2">
         <div class="text-sm/6">
           <div class="font-semibold text-gray-900">Will Drewes</div>
-            <div class="text-gray-600">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/willmd_every-architecture-book-you-skipped-is-now-activity-7429928947913596928-PEiz">LinkedIn</a></div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/willmd_every-architecture-book-you-skipped-is-now-activity-7429928947913596928-PEiz">LinkedIn</a></div>
         </div>
       </figcaption>
-      <p><a href="/tags/ai">AI</a> <a href="/tags/planning">Planning</a> <a href="/tags/requirements">Requirements</a></p>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a> <a href="/tags/planning">Planning</a> <a href="/tags/requirements">Requirements</a></p>
 
+      </div>
     </figure>
 <!-- END app/components/quote.rb -->
         </li>

@@ -6,6 +6,46 @@
     <description/>
     <link>http://localhost:3000/</link>
     <item>
+      <guid>7cb3916f</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/back-to-it/</link>
+      <pubDate>Sat, 04 Apr 2026 16:14:30 +0000</pubDate>
+      <title>Back To It</title>
+      <description><![CDATA[<p>Back to running regularly. Taking it slow, but adding consistency and miles to get ready for race season.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>b7ad90fe</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/lazy-saturday/</link>
+      <pubDate>Sat, 14 Mar 2026 23:55:31 +0000</pubDate>
+      <title>Lazy Saturday</title>
+      <description><![CDATA[<p>Lazy day spent doing chores, throwing the ball with the dogs, and playing computer games. We need a rest before Spring Break.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>422e1d8e</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/it-s-a-wash/</link>
+      <pubDate>Sat, 07 Mar 2026 02:42:47 +0000</pubDate>
+      <title>It's a Wash</title>
+      <description><![CDATA[<p>Had a good run this morning through the snow. But then an appointment in the thickening snow followed by picking up Oscar from an early release and then having to shovel the driveway lead to the day being largely a wash.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>9370cd5b</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/breaking/</link>
+      <pubDate>Fri, 06 Mar 2026 02:45:49 +0000</pubDate>
+      <title>Breaking</title>
+      <description><![CDATA[<p>Taekwondo belt test tonight. I broke a brick with my foot; brick didn’t stand a chance.</p>
+]]></description>
+    </item>
+    <item>
+      <guid>973b195a</guid>
+      <link isPermaLink="true">http://localhost:3000/posts/frustrations-2/</link>
+      <pubDate>Thu, 05 Mar 2026 02:43:23 +0000</pubDate>
+      <title>Frustrations</title>
+      <description><![CDATA[<p>Frustrations today on multiple fronts; no running because of icy rain last night, sorting through various and sundry customer problems at work, trying–largely in vain–to sort through Byzantine corporate policies and structures. But positives exist; onboarding a new back-end engineer, organizing our second all hands for my vertical, documenting and optimizing hiring processes for future growth.</p>
+]]></description>
+    </item>
+    <item>
       <guid>50147731</guid>
       <link isPermaLink="true">http://localhost:3000/posts/finally-more-skiing/</link>
       <pubDate>Mon, 23 Feb 2026 01:31:29 +0000</pubDate>

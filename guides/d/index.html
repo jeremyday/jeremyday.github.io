@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -364,20 +371,26 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Stands for “Did Not Finish”. Or, in extreme cases, “Did Nothing Fatal”. It means you did not finish the <a href="/guides/r#race">race</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Stands for “Did Not Finish”. Or, in extreme cases, “Did Nothing Fatal”. It means you did not finish the <a href="/guides/r#race">race</a>.</p>
 
 <p>Many ultrarunners have a sort of “death before DNF” mindset. I think this is garbage. There are many, <em>many</em> reasons you might consider DNFing, such as injury or missing a <a href="/guides/c#cutoff">cutoff</a>. Sometimes you just might not want to keep going, and that’s fine, too. There’s no shame in DNFing. But if you just don’t feel like going on, please keep going. You’ll thank yourself in the morning.</p>
 
 <div class="border-l-4 border-blue-400 bg-blue-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-blue-800 uppercase">Ultra Quote</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Quote</h3>
 <p class="text-sm text-blue-700">This is a paraphrase, but, “If you’re going through Hell, keep on going.”</p>
 </div></div></div>
 
 
-      <div>
-        <p><a href="/guides/c#cutoff">C » Cutoff</a> <a href="/guides/d#drop">D » Drop</a> <a href="/guides/d#drop-bag">D » Drop Bag</a> <a href="/guides/t#technicality">T » Technicality</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/c#cutoff">C » Cutoff</a> <a href="/guides/d#drop">D » Drop</a> <a href="/guides/d#drop-bag">D » Drop Bag</a> <a href="/guides/t#technicality">T » Technicality</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -386,13 +399,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Stands for “Did Not Start”. There are a bunch of reasons you might not start a race you registered for. It can be tough to not start a race you trained months for. Try not to get depressed about it. That advise is easier said than done, unfortunately.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Stands for “Did Not Start”. There are a bunch of reasons you might not start a race you registered for. It can be tough to not start a race you trained months for. Try not to get depressed about it. That advise is easier said than done, unfortunately.</p>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -401,13 +420,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Quitting a [race](/guides/r#race. See <a href="/guides/d#dnf">DNF</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Quitting a [race](/guides/r#race. See <a href="/guides/d#dnf">DNF</a>.</p>
 
 
-      <div>
-        <p><a href="/guides/a#aid-station-captain">A » Aid Station Captain</a> <a href="/guides/b#bib">B » Bib</a> <a href="/guides/p#pacer">P » Pacer</a> <a href="/guides/w#walking">W » Walking</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/a#aid-station-captain">A » Aid Station Captain</a> <a href="/guides/b#bib">B » Bib</a> <a href="/guides/p#pacer">P » Pacer</a> <a href="/guides/w#walking">W » Walking</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -416,7 +441,10 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Drop bags are invaluable to your success during your first 100 miler. The purpose of a drop bag is to allow you to stash whatever you might need during a <a href="/guides/r#race">race</a> at an <a href="/guides/a#aid-station">aid station</a>. When planning for a 100 miler you should look at the list of <a href="/guides/a#aid-station">aid stations</a>. Most <a href="/guides/r#race">races</a> will list <a href="/guides/a#aid-station">aid stations</a> and let you know whether <a href="/guides/c#crew">crew</a> or drop bags are available at that <a href="/guides/a#aid-station">aid station</a>. Read about the <a href="/guides/r#race">race</a> and consider what conditions you might have coming up after a drop bag <a href="/guides/a#aid-station">aid station</a> and what you might have before getting to a drop bag <a href="/guides/a#aid-station">aid station</a>. For instance, if there are <a href="/guides/s#stream-crossing">stream crossings</a> prior to reaching a drop bag <a href="/guides/a#aid-station">aid station</a> you may want to have a dry pair of <a href="/guides/s#socks">socks</a> in your drop bag. You may also want batteries if you’ll reach the drop bag at night, a change of clothes or added <a href="/guides/b#base-layers">base layers</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Drop bags are invaluable to your success during your first 100 miler. The purpose of a drop bag is to allow you to stash whatever you might need during a <a href="/guides/r#race">race</a> at an <a href="/guides/a#aid-station">aid station</a>. When planning for a 100 miler you should look at the list of <a href="/guides/a#aid-station">aid stations</a>. Most <a href="/guides/r#race">races</a> will list <a href="/guides/a#aid-station">aid stations</a> and let you know whether <a href="/guides/c#crew">crew</a> or drop bags are available at that <a href="/guides/a#aid-station">aid station</a>. Read about the <a href="/guides/r#race">race</a> and consider what conditions you might have coming up after a drop bag <a href="/guides/a#aid-station">aid station</a> and what you might have before getting to a drop bag <a href="/guides/a#aid-station">aid station</a>. For instance, if there are <a href="/guides/s#stream-crossing">stream crossings</a> prior to reaching a drop bag <a href="/guides/a#aid-station">aid station</a> you may want to have a dry pair of <a href="/guides/s#socks">socks</a> in your drop bag. You may also want batteries if you’ll reach the drop bag at night, a change of clothes or added <a href="/guides/b#base-layers">base layers</a>.</p>
 
 <p>You can stash things in drop bags that you no longer need. For instance, batteries or <a href="/guides/f#flashlight">flashlights</a> if you reach the drop bag during the day or extra <a href="/guides/b#base-layers">layers</a> you no longer need if it is warming up.</p>
 
@@ -425,20 +453,23 @@
 <p>When you come into an <a href="/guides/a#aid-station">aid station</a> with drop bags (not all <a href="/guides/a#aid-station">aid stations</a> will allow drop bags) an <a href="/guides/a#aid-station">aid station</a> <a href="/guides/v#volunteers">volunteer</a> will usually ask you if you have a bag, and if so if you want them to retrieve it. After an <a href="/guides/a#aid-station">aid station</a> shuts down at the end of a <a href="/guides/r#race">race</a> any drop bags will get delivered back to the <a href="/guides/r#race">race</a> headquarters, where you can pick them up after the <a href="/guides/r#race">race</a>. Sometimes if you <a href="/guides/d#dnf">DNF</a> you can swing by an <a href="/guides/a#aid-station">aid station</a> before it shuts down and pick up your drop bag.</p>
 
 <div class="border-l-4 border-red-400 bg-red-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-red-800 uppercase">Ultra Tip</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Tip</h3>
 <p class="text-sm text-red-700">Use a one-gallon ziplock bag for your drop bag. It’s waterproof, cheap, and large enough to store just about anything you’d need at an <a href="/guides/a#aid-station">aid station</a> except a spare pair of <a href="/guides/s#shoes">shoes</a>.</p>
 </div></div></div>
 
 <div class="border-l-4 border-red-400 bg-red-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-red-800 uppercase">Ultra Tip</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Tip</h3>
 <p class="text-sm text-red-700">Use <a href="/guides/d#duct-tape">duct tape</a> and a sharpie to label your drop bags. At the very least put the <a href="/guides/a#aid-station">aid station name</a>, your name, and your <a href="/guides/b#bib">bib number</a> on the label.</p>
 </div></div></div>
 
 
-      <div>
-        <p><a href="/guides/a#aid-station">A » Aid Station</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/a#aid-station">A » Aid Station</a> <a href="/guides/w#water-crossing">W » Water Crossing</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -447,13 +478,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>For <a href="/guides/b#blisters">blisters</a>. I also keep this around to so I can label my [drop bags](/guides/d#drop-bag. This is also why I usually keep a Sharpie in my bag.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>For <a href="/guides/b#blisters">blisters</a>. I also keep this around to so I can label my [drop bags](/guides/d#drop-bag. This is also why I usually keep a Sharpie in my bag.</p>
 
 
-      <div>
-        <p><a href="/guides/b#blisters">B » Blisters</a> <a href="/guides/d#drop-bag">D » Drop Bag</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/b#blisters">B » Blisters</a> <a href="/guides/d#drop-bag">D » Drop Bag</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
 
     </article>

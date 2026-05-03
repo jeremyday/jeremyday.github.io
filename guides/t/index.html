@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -364,13 +371,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
       
-
-
-      <div>
         
 
-      </div>
+
+        <div class="text-sm text-gray-500">
+          
+
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -379,13 +392,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>A description of how difficult a trail is to run on. A trail with low technicality will generally be smooth dirt with few rocks and roots. More technical trails will have rocks, roots, <a href="/guides/m#mud">mud</a>, <a href="/guides/s#sand">sand</a>, <a href="/guides/s#snow">snow</a>, or other obstacles requiring your attention. The more attention you have to pay to where you put your feet (see <a href="/guides/t#two-rules">two rules</a>) the more mentally fatigued you get over the course of a <a href="/guides/r#race">race</a>, and the more mentally fatigued you get the more likely you are to make a simple mistake that could drastically hurt your <a href="/guides/r#race">race</a>. For instance, you might forget to change out of wet <a href="/guides/s#socks">socks</a>, which could lead to <a href="/guides/b#blisters">blisters</a> if not taken care of, which could lead to a lot of foot pain later in a <a href="/guides/r#race">race</a>, which could lead to missing a <a href="/guides/c#cutoff">cutoff</a>, which could lead to a <a href="/guides/d#dnf">DNF</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>A description of how difficult a trail is to run on. A trail with low technicality will generally be smooth dirt with few rocks and roots. More technical trails will have rocks, roots, <a href="/guides/m#mud">mud</a>, <a href="/guides/s#sand">sand</a>, <a href="/guides/s#snow">snow</a>, or other obstacles requiring your attention. The more attention you have to pay to where you put your feet (see <a href="/guides/t#two-rules">two rules</a>) the more mentally fatigued you get over the course of a <a href="/guides/r#race">race</a>, and the more mentally fatigued you get the more likely you are to make a simple mistake that could drastically hurt your <a href="/guides/r#race">race</a>. For instance, you might forget to change out of wet <a href="/guides/s#socks">socks</a>, which could lead to <a href="/guides/b#blisters">blisters</a> if not taken care of, which could lead to a lot of foot pain later in a <a href="/guides/r#race">race</a>, which could lead to missing a <a href="/guides/c#cutoff">cutoff</a>, which could lead to a <a href="/guides/d#dnf">DNF</a>.</p>
 
 
-      <div>
-        <p><a href="/guides/s#shoes">S » Shoes</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/s#shoes">S » Shoes</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -394,13 +413,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>I prefer <a href="/guides/s#shorts">shorts</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>I prefer <a href="/guides/s#shorts">shorts</a>.</p>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -409,15 +434,21 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>The system the <a href="/guides/r#race-director">race director</a> uses to indicate to runners they are on the correct trail. Usually this is colored ribbons tied to branches or stakes stuck in the ground. For <a href="/guides/r#race">races</a> with a night running component this might also include special reflective ribbons to reflect the light from <a href="/guides/f#flashlight">flashlights</a> or <a href="/guides/h#headlamp">headlamps</a>. Often the <a href="/guides/r#race-director">race director</a> will add special signage to indicate runners are going the wrong way, that they need to make a turn, or that they should be wary of potential dangerous conditions ahead.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>The system the <a href="/guides/r#race-director">race director</a> uses to indicate to runners they are on the correct trail. Usually this is colored ribbons tied to branches or stakes stuck in the ground. For <a href="/guides/r#race">races</a> with a night running component this might also include special reflective ribbons to reflect the light from <a href="/guides/f#flashlight">flashlights</a> or <a href="/guides/h#headlamp">headlamps</a>. Often the <a href="/guides/r#race-director">race director</a> will add special signage to indicate runners are going the wrong way, that they need to make a turn, or that they should be wary of potential dangerous conditions ahead.</p>
 
 <p>The quality of trail marking can vary widely between <a href="/guides/r#race">races</a>. Some <a href="/guides/r#race">races</a> have a system in place and fantastic markings so the runners know they are on the right trail at all times. Other <a href="/guides/r#race">races</a>, however, have pretty thin markings, leaving runners sometimes uncertain as to whether they are going the right way. There can be a lot of anxiety in a <a href="/guides/r#race">race</a> with poor trail markings, because no runner likes the feeling that they may not be on the actual <a href="/guides/r#race">race</a> course.</p>
 
 
-      <div>
-        <p><a href="/guides/m#marking">M » Marking</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/m#marking">M » Marking</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -426,13 +457,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Any trail distance published by any <a href="/guides/r#race-director">race director</a> is going to be approximate. A 5k on trails will never be exactly 3.1 miles. The <a href="https://jeremyday.github.io/docs/guides/w#western-states">Western States 100</a> is about as close as any 100 miler gets to actual distance, and it’s 100.2 miles.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Any trail distance published by any <a href="/guides/r#race-director">race director</a> is going to be approximate. A 5k on trails will never be exactly 3.1 miles. The <a href="https://jeremyday.github.io/docs/guides/w#western-states">Western States 100</a> is about as close as any 100 miler gets to actual distance, and it’s 100.2 miles.</p>
 
 
-      <div>
-        <p><a href="/guides/y#ymmv">Y » YMMV</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/y#ymmv">Y » YMMV</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -441,13 +478,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
       
+        
 
 
-      <div>
-        <p><a href="/guides/f#fitness">F » Fitness</a> <a href="/guides/h#heat">H » Heat</a> <a href="/guides/l#luck">L » Luck</a> <a href="/guides/m#microspikes">M » Microspikes</a> <a href="/guides/t#training-race">T » Training Race</a> <a href="/guides/w#water-bottle">W » Water Bottle</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/f#fitness">F » Fitness</a> <a href="/guides/h#heat">H » Heat</a> <a href="/guides/l#luck">L » Luck</a> <a href="/guides/m#microspikes">M » Microspikes</a> <a href="/guides/t#training-race">T » Training Race</a> <a href="/guides/w#water-bottle">W » Water Bottle</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -456,18 +499,24 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>I like to run an <a href="/guides/u#ultramarathon">ultra or ultras</a> as <a href="/guides/t#training">training</a> for a 100 mile race. It gives me a chance to gauge my <a href="/guides/f#fitness">fitness</a> and dial in my <a href="/guides/g#gear">gear</a>. I think of these as supported <a href="/guides/l#long-run">long runs</a>. If I can get one in a cool location that’s a huge bonus.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>I like to run an <a href="/guides/u#ultramarathon">ultra or ultras</a> as <a href="/guides/t#training">training</a> for a 100 mile race. It gives me a chance to gauge my <a href="/guides/f#fitness">fitness</a> and dial in my <a href="/guides/g#gear">gear</a>. I think of these as supported <a href="/guides/l#long-run">long runs</a>. If I can get one in a cool location that’s a huge bonus.</p>
 
 <div class="border-l-4 border-blue-400 bg-blue-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-blue-800 uppercase">Ultra Quote</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Quote</h3>
 <p class="text-sm text-blue-700">I’m a completer, not a competer.</p>
 </div></div></div>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -476,13 +525,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>See <a href="/guides/p#poles">poles</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>See <a href="/guides/p#poles">poles</a>.</p>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -491,13 +546,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>I tell new trail runners there are really just two primary rules in trail running: pay attention to where you put your feet and pick your feet up. Fail either of those and you might end up on your face eating trail dirt.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>I tell new trail runners there are really just two primary rules in trail running: pay attention to where you put your feet and pick your feet up. Fail either of those and you might end up on your face eating trail dirt.</p>
 
 
-      <div>
-        <p><a href="/guides/t#technicality">T » Technicality</a> <a href="/guides/w#waistlamp">W » Waistlamp</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/t#technicality">T » Technicality</a> <a href="/guides/w#waistlamp">W » Waistlamp</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
 
     </article>

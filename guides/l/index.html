@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -364,13 +371,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>At night you’re going to need some sort of way to light the trail. Most runners tend to use <a href="/guides/h#headlamp">headlamps</a> to light the trail. I don’t care for <a href="/guides/h#headlamp">headlamps</a>, because they don’t cast shadows on the trail. I find a trip a lot when using them. Instead, I prefer to run with a <a href="/guides/h#headlamp">headlamp</a> around my waist (making it a <a href="/guides/w#waistlamp">waistlamp</a>, I suppose) and a <a href="/guides/f#flashlight">flashlight</a> in a free hand. This way the lights are lower and cast a shadow across the trail. Also, with a <a href="/guides/h#headlamp">headlamp</a> you can never look away from the cone of light. With a <a href="/guides/h#headlamp">headlamp</a> around my waist I have a constant light in front of me, and with a <a href="/guides/f#flashlight">flashlight</a> I can easily shine light wherever I may need it, while also being able to look away.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>At night you’re going to need some sort of way to light the trail. Most runners tend to use <a href="/guides/h#headlamp">headlamps</a> to light the trail. I don’t care for <a href="/guides/h#headlamp">headlamps</a>, because they don’t cast shadows on the trail. I find a trip a lot when using them. Instead, I prefer to run with a <a href="/guides/h#headlamp">headlamp</a> around my waist (making it a <a href="/guides/w#waistlamp">waistlamp</a>, I suppose) and a <a href="/guides/f#flashlight">flashlight</a> in a free hand. This way the lights are lower and cast a shadow across the trail. Also, with a <a href="/guides/h#headlamp">headlamp</a> you can never look away from the cone of light. With a <a href="/guides/h#headlamp">headlamp</a> around my waist I have a constant light in front of me, and with a <a href="/guides/f#flashlight">flashlight</a> I can easily shine light wherever I may need it, while also being able to look away.</p>
 
 
-      <div>
-        <p><a href="/guides/f#flashlight">F » Flashlight</a> <a href="/guides/h#headlamp">H » Headlamp</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/f#flashlight">F » Flashlight</a> <a href="/guides/h#headlamp">H » Headlamp</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -379,13 +392,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
       
+        
 
 
-      <div>
-        <p><a href="/guides/t#training-race">T » Training Race</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/t#training-race">T » Training Race</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -394,13 +413,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>You don’t need this. You’ve done the <a href="/guides/t#training">training</a>. Trust the <a href="/guides/t#training">training</a>. Enjoy your <a href="/guides/r#race">race</a>.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>You don’t need this. You’ve done the <a href="/guides/t#training">training</a>. Trust the <a href="/guides/t#training">training</a>. Enjoy your <a href="/guides/r#race">race</a>.</p>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
 
     </article>

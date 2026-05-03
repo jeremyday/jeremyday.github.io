@@ -15,9 +15,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -135,9 +142,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -243,9 +250,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -352,7 +359,7 @@
 <!-- END app/components/h1.rb -->
 
   <!-- BEGIN app/components/content_container.rb
--->    <div class="my-4 md:my-8">
+-->    <div class="content my-4 md:my-8">
       
 
     </div>
@@ -364,13 +371,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
       
-
-
-      <div>
         
 
-      </div>
+
+        <div class="text-sm text-gray-500">
+          
+
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -379,18 +392,24 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>Running a <a href="/guides/r#race">race</a> without paying for it and without a <a href="/guides/#bib">bib</a>. Don’t be this asshole.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>Running a <a href="/guides/r#race">race</a> without paying for it and without a <a href="/guides/#bib">bib</a>. Don’t be this asshole.</p>
 
 <div class="border-l-4 border-red-400 bg-red-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-red-800 uppercase">Ultra Tip</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Tip</h3>
 <p class="text-sm text-red-700">Don’t be this asshole.</p>
 </div></div></div>
 
 
-      <div>
-        
+        <div class="text-sm text-gray-500">
+          
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -399,13 +418,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
       
+        
 
 
-      <div>
-        <p><a href="/guides/d#drop-bag">D » Drop Bag</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/d#drop-bag">D » Drop Bag</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -414,18 +439,24 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>A small piece of paper with your race number on it. You’ll have to wear this somewhere where <a href="/guides/a#aid-station">aid station</a> <a href="/guides/v#volunteers">volunteers</a> can see it. At most <a href="/guides/a#aid-station">aid stations</a> <a href="/guides/v#volunteers">volunteers</a> will log runners in and out. This is so the <a href="/guides/r#race-director">race director</a> knows where all the runners are on the course.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>A small piece of paper with your race number on it. You’ll have to wear this somewhere where <a href="/guides/a#aid-station">aid station</a> <a href="/guides/v#volunteers">volunteers</a> can see it. At most <a href="/guides/a#aid-station">aid stations</a> <a href="/guides/v#volunteers">volunteers</a> will log runners in and out. This is so the <a href="/guides/r#race-director">race director</a> knows where all the runners are on the course.</p>
 
 <div class="border-l-4 border-red-400 bg-red-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-red-800 uppercase">Ultra Tip</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Tip</h3>
 <p class="text-sm text-red-700">If you need to <a href="/guides/d#drop">drop out</a> of a <a href="/guides/r#race">race</a> you need to notify the <a href="/guides/a#aid-station-captain">aid station captain</a> and give them your bib number.</p>
 </div></div></div>
 
 
-      <div>
-        <p><a href="/guides/a#aid-station-captain">A » Aid Station Captain</a> <a href="/guides/b#banditting">B » Banditting</a> <a href="/guides/d#drop-bag">D » Drop Bag</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/a#aid-station-captain">A » Aid Station Captain</a> <a href="/guides/b#banditting">B » Banditting</a> <a href="/guides/d#drop-bag">D » Drop Bag</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -434,20 +465,26 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>These will make your life suck. Keep your feet dry, change your <a href="/guides/s#socks">socks</a> if necessary, use <a href="/guides/v#vaseline">vaseline</a> or some other lubricant, and you’ll go a long way towards preventing blisters.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>These will make your life suck. Keep your feet dry, change your <a href="/guides/s#socks">socks</a> if necessary, use <a href="/guides/v#vaseline">vaseline</a> or some other lubricant, and you’ll go a long way towards preventing blisters.</p>
 
 <p>There are a lot of differing opinions on how to treat blisters mid-race. I’ve found <a href="/guides/d#duct-tape">duct tape</a> over the top of an unpopped blister is usually a pretty good bet. You can find <a href="/guides/d#duct-tape">duct tape</a> just about anywhere, making it ideal for races in remote places.</p>
 
 <div class="border-l-4 border-red-400 bg-red-50 p-4 my-4"><div class="flex"><div class="ml-3">
-<h3 class="text-sm font-medium text-red-800 uppercase">Ultra Tip</h3>
+<h3 class="text-lg font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">Ultra Tip</h3>
 <p class="text-sm text-red-700">Blisters might slow you down but they don’t need to end your race.</p>
 </div></div></div>
 
 
-      <div>
-        <p><a href="/guides/d#duct-tape">D » Duct Tape</a> <a href="/guides/h#hot-spots">H » Hot Spots</a> <a href="/guides/t#technicality">T » Technicality</a> <a href="/guides/v#vaseline">V » Vaseline</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/d#duct-tape">D » Duct Tape</a> <a href="/guides/h#hot-spots">H » Hot Spots</a> <a href="/guides/t#technicality">T » Technicality</a> <a href="/guides/v#vaseline">V » Vaseline</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -456,13 +493,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p>A common brand of…personal lubrication. It comes in a bar that is easy to apply. Some folks use it on their feet, but that doesn’t do it for me, as I prefer <a href="/guides/v#vaseline">Vaseline</a>. I have used Bodyglide on my back to prevent <a href="/guides/c#chafing">chafing</a> from my <a href="/guides/p#pack">pack</a>. On the whole it is clean and not greasy, but you need to plan to have some in advance, because it is not the kind of <a href="/guides/g#gear">gear</a> you can find just anywhere on short notice.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p>A common brand of…personal lubrication. It comes in a bar that is easy to apply. Some folks use it on their feet, but that doesn’t do it for me, as I prefer <a href="/guides/v#vaseline">Vaseline</a>. I have used Bodyglide on my back to prevent <a href="/guides/c#chafing">chafing</a> from my <a href="/guides/p#pack">pack</a>. On the whole it is clean and not greasy, but you need to plan to have some in advance, because it is not the kind of <a href="/guides/g#gear">gear</a> you can find just anywhere on short notice.</p>
 
 
-      <div>
-        <p><a href="/guides/g#gear">G » Gear</a> <a href="/guides/v#vaseline">V » Vaseline</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/g#gear">G » Gear</a> <a href="/guides/v#vaseline">V » Vaseline</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
     <div class="mb-8">
       <!-- BEGIN app/components/h2.rb
@@ -471,13 +514,19 @@
     </h2>
 <!-- END app/components/h2.rb -->
 
-      <p><a href="https://www.buff.com/us">Buff</a>, like Kleenex, is a brand that has become its own product category. A buff is multi-purpose tube of fabric. You can wear it around your neck, on your head like a hat, use it to tie back your hair, or keep it over your mouth if there’s a lot of dust. When I <a href="/guides/r#race">race</a> I usually put one around my neck. It keeps the sun off, the sweat (and therefor cool) close, and you can put <a href="/guides/i#ice">ice</a> in it to keep you cool.</p>
+      <!-- BEGIN app/components/content_container.rb
+-->    <div class="content my-4 md:my-8">
+      
+        <p><a href="https://www.buff.com/us">Buff</a>, like Kleenex, is a brand that has become its own product category. A buff is multi-purpose tube of fabric. You can wear it around your neck, on your head like a hat, use it to tie back your hair, or keep it over your mouth if there’s a lot of dust. When I <a href="/guides/r#race">race</a> I usually put one around my neck. It keeps the sun off, the sweat (and therefor cool) close, and you can put <a href="/guides/i#ice">ice</a> in it to keep you cool.</p>
 
 
-      <div>
-        <p><a href="/guides/i#ice">I » Ice</a></p>
+        <div class="text-sm text-gray-500">
+          <p><a href="/guides/i#ice">I » Ice</a></p>
 
-      </div>
+        </div>
+
+    </div>
+<!-- END app/components/content_container.rb -->
     </div>
 
     </article>

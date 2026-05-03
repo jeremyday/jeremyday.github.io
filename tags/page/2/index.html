@@ -9,9 +9,16 @@
     
 
     <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-e0705609.css" />
+<link rel="stylesheet" href="/assets/tailwind-c40b2107.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
   </head>
 
   <body class="h-full">
@@ -129,9 +136,9 @@
 <!-- END app/components/sidebar_item.rb -->
                         <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -237,9 +244,9 @@
 <!-- END app/components/sidebar_item.rb -->
                   <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
-        <a href="/interesting" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+        <a href="/quotes" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm42-104c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42zm-81.37-211.401l6.8 136c.319 6.387 5.591 11.401 11.985 11.401h41.17c6.394 0 11.666-5.014 11.985-11.401l6.8-136c.343-6.854-5.122-12.599-11.985-12.599h-54.77c-6.863 0-12.328 5.745-11.985 12.599z"/></svg>
-          Interesting
+          Quotes
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -345,217 +352,304 @@
   </thead>
   <tbody>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/literature">Literature</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/adaptive">Adaptive</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/los-alamos-nm">Los Alamos, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/administration">Administration</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/lutsen-mn">Lutsen, MN</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/adobe">Adobe</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/management">Management</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/adr">Adr</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/marathon">Marathon</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/adventure">Adventure</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/maybe">Maybe</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/adventureracing">Adventureracing</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/mccall-id">McCall, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/aggregation">Aggregation</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/memoir">Memoir</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/agile">Agile</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/mn">Minnesota</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/aim">Aim</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/mo">Missouri</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/air">Air</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/mt">Montana</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ajax">Ajax</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pages-gt-400">More Than 400 Pages</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ajaxshit">Ajaxshit</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/mystery">Mystery</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alabama">Alabama</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/nathrop-co">Nathrop, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alaska">Alaska</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ne">Nebraska</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alberta">Alberta</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/nm">New Mexico</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alchemist">Alchemist</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/noir">Noir</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alchemy">Alchemy</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/non-fiction">Non Fiction</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alerts">Alerts</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/nonfiction">Nonfiction</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/algebra">Algebra</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/novella">Novella</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/algebraic">Algebraic</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ok">Oklahoma</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/algorithms">Algorithms</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/olympic-valley-ca">Olympic Valley, CA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/allongesjs">Allongesjs</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/omaha-ne">Omaha, NE</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alloyui">Alloyui</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/omnibus">Omnibus</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alpinejs">Alpinejs</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ouray-co">Ouray, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/altimeter">Altimeter</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/paperback">Paperback</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/alvord-tx">Alvord, TX</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pine-co">Pine, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/amazon">Amazon</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/planning">Planning</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/amish">Amish</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/pocatello-id">Pocatello, ID</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/amplify">Amplify</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/programming">Programming</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/amqp">Amqp</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/rails">Rails</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/analysis">Analysis</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ran">Ran</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/analytics">Analytics</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/red-feather-lakes-co">Red Feather Lakes, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/anatomy">Anatomy</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/red-river-nm">Red River, NM</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/android">Android</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/reference">Reference</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/angular">Angular</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/requirements">Requirements</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/angularjs">Angularjs</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ruby">Ruby</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/anic">Anic</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/running">Running</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/animation">Animation</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/salida-co">Salida, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ansible">Ansible</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/science-fiction">Science Fiction</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ant">Ant</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/sedalia-co">Sedalia, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/antipatterns">Antipatterns</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/series">Series</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/apa">Apa</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/short-stories">Short Stories</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/apache">Apache</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/signed">Signed</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/api">Api</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/silverton-co">Silverton, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/apis">Apis</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/softcover">Softcover</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/apollojs">Apollojs</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/space-opera">Space Opera</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/appdotnet">Appdotnet</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/steamboat-springs-co">Steamboat Springs, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/appfog">Appfog</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/steelville-mo">Steelville, MO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/apple">Apple</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/tech">Tech</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/appliances">Appliances</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/telluride-co">Telluride, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/applications">Applications</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/tx">Texas</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/appsync">Appsync</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/trade-paperback">Trade Paperback</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/april">April</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/translated">Translated</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/arangodb">Arangodb</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/tulsa-ok">Tulsa, OK</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/arc">Arc</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/tyler-tx">Tyler, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/archeology">Archeology</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/uravan-co">Uravan, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/architecture">Architecture</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ut">Utah</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/argentina">Argentina</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/waco-tx">Waco, TX</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/aria">Aria</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/wa">Washington</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/arizona">Arizona</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/web-design">Web Design</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/arkansas">Arkansas</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/weird">Weird</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/art">Art</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/wenatchee-wa">Wenatchee, WA</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/artice">Artice</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/westcliffe-co">Westcliffe, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/article">Article</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/western">Western</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/articles">Articles</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/westminster-co">Westminster, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/ashex">Ashex</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/winter-park-co">Winter Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/asp">Asp</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/woodland-park-co">Woodland Park, CO</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/aspectoriented">Aspectoriented</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/wy">Wyoming</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/assetmanagement">Assetmanagement</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/xml">Xml</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/astra">Astra</a></td>
     </tr>
     <tr class="even:bg-gray-50">
-      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/young-adult">Young Adult</a></td>
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/astronomy">Astronomy</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/async">Async</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/asynchronous">Asynchronous</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/atlassian">Atlassian</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/atom">Atom</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/atomiccss">Atomiccss</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/atomicdesign">Atomicdesign</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/audio">Audio</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/august">August</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/australia">Australia</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/auth0">Auth0</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/authentication">Authentication</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/authlogic">Authlogic</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/authorization">Authorization</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/authorizations">Authorizations</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/autodesk">Autodesk</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/automation">Automation</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/avascript">Avascript</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/awk">Awk</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/aws">Aws</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/awsmcss">Awsmcss</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/axiosjs">Axiosjs</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/axis">Axis</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/azure">Azure</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/backbonejs">Backbonejs</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/backend">Backend</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/backpacking">Backpacking</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/backup">Backup</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/baconjs">Baconjs</a></td>
+    </tr>
+    <tr class="even:bg-gray-50">
+      <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6"><a href="/tags/balanced">Balanced</a></td>
     </tr>
   </tbody>
 </table></div>
@@ -575,8 +669,32 @@
         <a href="/tags/page/1" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">1</a>
         <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
         <a href="/tags/page/2" aria-current="page" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600">2</a>
+        <a href="/tags/page/3" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
+        <a href="/tags/page/4" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">4</a>
+        <a href="/tags/page/5" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">5</a>
+        <a href="/tags/page/6" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">6</a>
+        <a href="/tags/page/7" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">7</a>
+        <a href="/tags/page/8" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">8</a>
+        <a href="/tags/page/9" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">9</a>
+        <a href="/tags/page/10" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">10</a>
+        <a href="/tags/page/11" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">11</a>
+        <a href="/tags/page/12" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">12</a>
+        <a href="/tags/page/13" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">13</a>
+        <a href="/tags/page/14" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">14</a>
+        <a href="/tags/page/15" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">15</a>
+        <a href="/tags/page/16" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">16</a>
+        <a href="/tags/page/17" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">17</a>
+        <a href="/tags/page/18" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">18</a>
+        <a href="/tags/page/19" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">19</a>
+        <a href="/tags/page/20" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">20</a>
   </div>
   <div class="-mt-px flex w-0 flex-1 justify-end">
+      <a href="/tags/page/3" class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+        Next
+        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="ml-3 size-5 text-gray-400">
+          <path d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" fill-rule="evenodd" />
+        </svg>
+      </a>
   </div>
 </nav>
 <!-- END app/components/pagination.rb -->

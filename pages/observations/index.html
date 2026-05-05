@@ -2,16 +2,13 @@
 --><!DOCTYPE html>
 <html class="h-full bg-white">
   <head>
-    <title>Contact</title>
-<link rel="canonical" href="http://localhost:3000/pages/contact/">
-<meta name="description" content="description">
-<meta property="og:title" content="Contact">
-<meta property="og:url" content="http://localhost:3000/pages/contact/">
-<meta property="og:description" content="description">
+    <title>Miscellaneous Interesting Things</title>
+<link rel="canonical" href="http://localhost:3000/pages/observations/">
+<meta property="og:title" content="Miscellaneous Interesting Things">
+<meta property="og:url" content="http://localhost:3000/pages/observations/">
 <meta property="og:site_name" content="Your First 100 Miler">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact">
-<meta name="twitter:description" content="description">
+<meta name="twitter:title" content="Miscellaneous Interesting Things">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="alternate" type="application/rss+xml" title="Posts RSS Feed" href="http://localhost:3000/feeds/posts.xml" />
@@ -275,7 +272,7 @@
           <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
-      <div class="flex-1 text-sm/6 font-semibold text-white">Contact</div>
+      <div class="flex-1 text-sm/6 font-semibold text-white">Miscellaneous Interesting Things</div>
       <a href="#">
         <span class="sr-only">Your profile</span>
         <img class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" src="/assets/profile-3fe03124.jpg" />
@@ -337,7 +334,7 @@
                       <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
                         <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                       </svg>
-                      <a href="contact" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Contact</a>
+                      <a href="observations" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Miscellaneous Interesting Things</a>
                     </div>
                   </li>
               </ol>
@@ -348,8 +345,8 @@
 -->    <article class="max-w-4xl mx-auto mt-4 px-2 md:mt-8">
       
   <!-- BEGIN app/components/h1.rb
--->    <h1 id="contact" class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
-      Contact
+-->    <h1 id="miscellaneous-interesting-things" class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
+      Miscellaneous Interesting Things
     </h1>
 <!-- END app/components/h1.rb -->
 
@@ -357,34 +354,328 @@
 -->    <div class="content my-4 md:my-8">
       
       <!-- BEGIN inline template
---><article class="max-w-4xl mx-auto mt-16 px-2">
-  <h1 class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
-    Contact
-  </h1>
+-->
+<p class="my-8">These are some things that I have noticed around town.</p>
 
-  <p class="mt-5 text-lg text-gray-800 md:text-2xl max-w-prose md:mt-8">
-    Want to say “hi”? Have a question? <a href="mailto:me@example.com">Send me an email</a> or find me on a platform below.
-  </p>
+<strong>MAP</strong>
+<div id="map" class="h-96"></div>
+<script language="JavaScript">
+  var map = L.map('map').setView([38.828950263330896, -104.86167283947542], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+  }).addTo(map);
+  var marker = L.marker([38.828950263330896, -104.86167283947542]).addTo(map).bindPopup("<p><b>Bear Creek Regional Park</b></p><p>Cool stuff happens here.</p>");
+  marker = L.marker([38.825264, -104.859758]).addTo(map).bindPopup("<p><b>Bear Creek Dog Park</b></p><p>So many happy doggos.</p>");
+  marker = L.marker([38.813223, -104.865215]).addTo(map).bindPopup("<p><b>Fun Birdhouses</b></p><p>There's a house up this way with some really great bird houses. My favorite is a tiny bird house that has it's own tiny little bird house.</p>");
+  marker = L.marker([38.823247, -104.890303]).addTo(map).bindPopup("<p><b>Section 16 Trailhead</b></p><p>Probably my favorite trail in Colorado Springs.</p>");
+</script>
 
-  <ul class="flex flex-col gap-y-1 mt-5 text-lg">
-    <!-- BEGIN app/views/content/social_links/_social_link.html.erb
---><li>
-  <a target="_blank" class="underline text-gray-700 hover:no-underline" href="https://example.com">Social X</a>
-</li>
+<!-- BEGIN app/components/h2.rb
+-->    <h2 id="quotes" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Quotes
+    </h2>
+<!-- END app/components/h2.rb -->
 
-<!-- END app/views/content/social_links/_social_link.html.erb --><!-- BEGIN app/views/content/social_links/_social_link.html.erb
---><li>
-  <a target="_blank" class="underline text-gray-700 hover:no-underline" href="https://example.com">Social Y</a>
-</li>
+<ul role="list" class="mt-8 space-y-8">
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>“I might spend 30, 40% of the time a task takes just to actually write out what exactly is it that I want,” he said. What are the constraints? What are the success criteria? What’s the architecture? What libraries and UI components should be used?</p>
 
-<!-- END app/views/content/social_links/_social_link.html.erb --><!-- BEGIN app/views/content/social_links/_social_link.html.erb
---><li>
-  <a target="_blank" class="underline text-gray-700 hover:no-underline" href="https://example.com">Social Z</a>
-</li>
+<p>All of that work to get clarity before you start code generation leads to much-higher-quality outcomes from AI.</p>
 
-<!-- END app/views/content/social_links/_social_link.html.erb -->
-  </ul>
-</article><!-- END inline template -->
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Addy Osmani</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.oreilly.com/radar/what-developers-actually-need-to-know-right-now/">O&#39;Reilly Radar</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a> <a href="/tags/planning">Planning</a> <a href="/tags/requirements">Requirements</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>when AI handles the code generation, the engineer’s value shifts to the decisions above the code:</p>
+
+<ol>
+  <li>what do we build?</li>
+  <li>why? for whom?</li>
+  <li>and how it all fits together.</li>
+</ol>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Addy Osmani</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/addyosmani_ai-programming-softwareengineering-activity-7428934820006711297-gsir">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a> <a href="/tags/planning">Planning</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>The unreasonably high bar isn’t where they went to school. It’s that they genuinely cared about what we’re building.</p>
+
+<p>People who love the product self-select in. They see the vision. They’re already bought in before the first conversation. And they’re the best hires.</p>
+
+<p>The team works hard because they enjoy the process. Real customers and real contracts drive urgency, not perks.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Alek Petuskey</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/aleksanderpetuskey_a-recruiting-agency-refused-to-work-with-activity-7432127197500579840-_AUs">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/hiring">Hiring</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>The workflow I’m going to describe has one core principle: <strong>never let Claude write code until you’ve reviewed and approved a written plan.</strong> This separation of planning and execution is the single most important thing I do.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Boris Tane</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://boristane.com/blog/how-i-use-claude-code/">boris tane</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a> <a href="/tags/claude">Claude</a> <a href="/tags/planning">Planning</a> <a href="/tags/requirements">Requirements</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>And that’s the thing. You don’t earn trust by presenting strategies or reorganizing the org chart. You earn it by sitting next to someone and doing the work with them.</p>
+
+<p>Being in the pull requests. Joining the debugging sessions. Showing up in the hard stuff, not just the planning meetings.</p>
+
+<p>Once people see you’ll do the work alongside them, the walls come down. They start sharing what’s actually broken. They start trusting you with the real problems.</p>
+
+<p>And then you build from there. Make plans together. Solve problems together. Help people take ownership until they don’t need you hovering anymore.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Ilia Mikhailov</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/iliamikhailov_nobody-cares-about-your-resume-when-you-walk-activity-7431605021508706305-30DO">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/leadership">Leadership</a> <a href="/tags/management">Management</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>My first week I mostly observed and asked questions. The same five questions I always ask when I walk into a new company:</p>
+
+<ul>
+  <li>Where is your roadmap?</li>
+  <li>What services are you paying for?</li>
+  <li>Who decides what gets built and why?</li>
+  <li>What does your release process look like?</li>
+  <li>How does the product team work with the rest of the org?</li>
+</ul>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Ilia Mikhailov</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/iliamikhailov_i-joined-a-healthtech-company-last-summer-activity-7434144171499659264-_Psl/">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/management">Management</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>A regular engineer gets tasks. Jira tickets come in, code goes out. The scope is days. Maybe a week. You’re executing under someone else’s direction.</p>
+
+<p>A Senior Engineer leads projects. You take a problem bigger than a single task, break it down into steps, distribute work to other engineers, and keep the pieces moving toward integration. The scope is weeks to a quarter.</p>
+
+<p>A Staff Engineer leads teams through technical decisions. You’re no longer organizing one project - you’re orchestrating multiple projects across a team, making sure they cascade into delivering a new system, an end-to-end feature, a new service.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Luca Bonmassar</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/activity-7434964872624365568-7F0B/">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/engineering">Engineering</a> <a href="/tags/staff">Staff</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>Overfunctioning Engineering Managers are often praised.</p>
+
+<p>They jump into code when things get tight. They absorb pressure from above and below. They make decisions quickly to keep delivery moving. They stay late to “just handle it.” From the outside it looks like leadership but inside the system it’s fragility.</p>
+
+<p>I learned this the hard way on a team where about half of my engineers were repeatedly lent out to “higher priority” initiatives. Our roadmap didn’t shrink, but our capacity did. My team stayed head down trying to keep up. I stepped in to carry more of the system design and documentation just to keep things moving.</p>
+
+<p>From the outside, we looked committed. Underneath, we were compensating. The engineers were burning out. I was overfunctioning. The organization couldn’t see the structural problem because we were masking it with effort.</p>
+
+<p>When an EM becomes the safety net for unclear expectations or shifting priorities, they don’t just carry load, they hide risk. The team learns to escalate upward instead of resolving laterally. Architecture decisions get centralized instead of distributed. Delivery becomes dependent on one person’s endurance.</p>
+
+<p>It might look steady. Until that person steps away. Undefined success doesn’t just make leadership unpredictable. It encourages managers to compensate with effort instead of leverage. Compensation doesn’t scale.</p>
+
+<p>Strong managers can survive this pattern for a long time. Some even thrive in it. But the organization becomes dependent on individual tolerance for ambiguity rather than a shared operating model. That’s not resilience. That’s concentration risk.</p>
+
+<p>If you want predictable delivery at scale, you need predictable leadership standards. Heroics don’t scale.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Matt Syp</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/mattsyp_overfunctioning-engineering-managers-are-activity-7430253594928603136-sv3I">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/leadership">Leadership</a> <a href="/tags/management">Management</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>People who fire their team of 30+ and replace them with a swarm of agents running on 70+ Mac Minis are in for a rough awakening 😈</p>
+
+<p>I can’t find the LinkedIn post I saw this morning, but someone said they did exactly this, complete with a photo of multiple stacks of Minis. They had a swarm working on the front end, one for the back end, an agent to review PRs, etc.</p>
+
+<p>Sounds great in theory, but they a) became the sole bottleneck, since every agent needs some sort of guidance on what to build, and b) revealed they never understood what software development actually involves.</p>
+
+<p>AI will replace the act of typing code. It won’t replace research, customer advocacy, establishing and guarding code quality, or decision-making rooted in short- and long-term vision. Software development is far more than “typing code,” and that’s exactly the part your team should be using AI for.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Roy Tomeij</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/tomeij_people-who-fire-their-team-of-30-and-replace-activity-7429582472671162368-y5EP">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+    <li>
+      <!-- BEGIN app/components/quote.rb
+-->    <figure class="">
+      <!--<blockquote class="border-l border-indigo-600 pl-8 text-base tracking-tight text-gray-900">-->
+      <blockquote class="content border-l border-indigo-600 pl-8">
+        <p>Then AI flipped the script.</p>
+
+<p>When an LLM writes your code, the quality of constraints you give it is everything.</p>
+
+<p>[…]</p>
+
+<p>And DDD? That’s the big one.</p>
+
+<p>Bounded contexts tell the AI what it should and shouldn’t touch. Aggregates define transactional boundaries. Ubiquitous language means the LLM and your team speak the same vocabulary.</p>
+
+      </blockquote>
+      
+      <figcaption class="flex gap-x-2 mt-2">
+        <div class="text-sm/6">
+          <div class="font-semibold text-gray-900">Will Drewes</div>
+          
+            <div class="text-gray-900">-- via <a class="underline hover:no-underline" href="https://www.linkedin.com/posts/willmd_every-architecture-book-you-skipped-is-now-activity-7429928947913596928-PEiz">LinkedIn</a></div>
+        </div>
+      </figcaption>
+      
+      <div class="text-sm text-gray-500">
+        <p><a href="/tags/ai">AI</a> <a href="/tags/planning">Planning</a> <a href="/tags/requirements">Requirements</a></p>
+
+      </div>
+    </figure>
+<!-- END app/components/quote.rb -->
+    </li>
+</ul><!-- END inline template -->
 
     </div>
 <!-- END app/components/content_container.rb -->

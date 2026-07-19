@@ -1,0 +1,202 @@
+/*
+ * RailsPress Admin - Utilities
+ * Helper classes, prose styling, SEO preview
+ */
+
+/* Meta information */
+.rp-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--rp-space-sm);
+  font-size: 0.875rem;
+  color: var(--rp-text-muted);
+  margin-top: var(--rp-space-xs);
+}
+
+.rp-meta-separator {
+  color: var(--rp-text-light);
+}
+
+.rp-post-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--rp-space-md);
+  font-size: 0.875rem;
+  color: var(--rp-text-muted);
+  margin-top: var(--rp-space-sm);
+}
+
+.rp-post-tags {
+  margin-bottom: var(--rp-space-xl);
+}
+
+/* Empty state */
+.rp-empty-state {
+  text-align: center;
+  padding: var(--rp-space-2xl);
+  color: var(--rp-text-muted);
+}
+
+/* Divider */
+.rp-divider {
+  height: 1px;
+  background: var(--rp-border-light);
+  margin: var(--rp-space-lg) 0;
+}
+
+/* Prose / Rich content */
+.rp-prose {
+  font-family: var(--rp-font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.rp-prose p {
+  margin-bottom: var(--rp-space-md);
+}
+
+.rp-prose h2 {
+  font-size: 1.5rem;
+  margin: var(--rp-space-xl) 0 var(--rp-space-md);
+}
+
+.rp-prose h3 {
+  font-size: 1.25rem;
+  margin: var(--rp-space-lg) 0 var(--rp-space-sm);
+}
+
+.rp-prose code {
+  font-family: var(--rp-font-mono);
+  font-size: 0.875em;
+  background: var(--rp-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.rp-prose pre {
+  background: var(--rp-sidebar-bg);
+  color: var(--rp-sidebar-text-active);
+  padding: var(--rp-space-lg);
+  border-radius: var(--rp-radius);
+  overflow-x: auto;
+  margin-bottom: var(--rp-space-md);
+}
+
+.rp-prose pre code {
+  background: none;
+  padding: 0;
+}
+
+.rp-prose ul {
+  padding-left: var(--rp-space-md);
+}
+
+.rp-prose ol li{
+  margin-left: var(--rp-space-xs);
+}
+
+/* SEO Preview */
+.rp-seo-preview {
+  margin-top: var(--rp-space-xl);
+  padding: var(--rp-space-md);
+  background: var(--rp-info-light);
+  border-radius: var(--rp-radius);
+  border: 1px solid #d8e8f0;
+}
+
+.rp-seo-preview-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rp-text-muted);
+  margin-bottom: var(--rp-space-md);
+}
+
+.rp-seo-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1a0dab;
+  margin-bottom: var(--rp-space-xs);
+}
+
+.rp-seo-description {
+  font-size: 0.875rem;
+  color: var(--rp-text-muted);
+  line-height: 1.5;
+}
+
+/* Code block */
+.rp-code-block {
+  background: var(--rp-sidebar-bg);
+  color: var(--rp-sidebar-text);
+  padding: var(--rp-space-md);
+  border-radius: var(--rp-radius);
+  font-family: var(--rp-font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.rp-code-block code {
+  background: none;
+  padding: 0;
+}
+
+/* Content preview */
+.rp-content-preview {
+  padding: var(--rp-space-md);
+  background: var(--rp-bg-secondary);
+  border: 1px solid var(--rp-border);
+  border-radius: var(--rp-radius);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+/* Text utilities */
+.rp-text-danger {
+  color: var(--rp-danger);
+}
+
+/* Featured images */
+.rp-featured-image {
+  margin-bottom: var(--rp-space-lg);
+}
+
+.rp-featured-image-full {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--rp-radius);
+  border: 1px solid var(--rp-border);
+}
+
+.rp-featured-image-preview {
+  margin-bottom: var(--rp-space-md);
+}
+
+.rp-featured-image-thumb {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--rp-radius);
+  border: 1px solid var(--rp-border);
+}
+
+/* Input with button */
+.rp-input-with-button {
+  display: flex;
+  gap: var(--rp-space-sm);
+  align-items: center;
+}
+
+.rp-input-with-button .rp-input {
+  flex: 1;
+}
+
+.rp-input-with-button .rp-btn {
+  flex-shrink: 0;
+}

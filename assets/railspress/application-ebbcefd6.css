@@ -1,0 +1,46 @@
+/*
+* RailsPress Admin Styles
+* Manifest file - loads all admin stylesheets in order
+*
+*= require ./admin/variables
+*= require ./admin/base
+*= require ./admin/layout
+*= require ./admin/page
+*= require ./admin/cards
+*= require ./admin/stats
+*= require ./admin/tables
+*= require ./admin/filters
+*= require ./admin/forms
+*= require ./admin/buttons
+*= require ./admin/badges
+*= require ./admin/lists
+*= require ./admin/flash
+*= require ./admin/utilities
+*= require ./admin/responsive
+*= require ./admin/components/lexxy
+*= require ./admin/components/imports
+*= require ./admin/components/exports
+*/
+/*
+ * RailsPress Admin Styles
+ */
+
+@import url("/assets/railspress/admin/variables-7e075e50.css");
+@import url("/assets/railspress/admin/base-6681d375.css");
+@import url("/assets/railspress/admin/layout-1835b3f7.css");
+@import url("/assets/railspress/admin/page-ad2d3b3c.css");
+@import url("/assets/railspress/admin/cards-80145755.css");
+@import url("/assets/railspress/admin/stats-c08fa54f.css");
+@import url("/assets/railspress/admin/tables-e68e519b.css");
+@import url("/assets/railspress/admin/filters-d521060d.css");
+@import url("/assets/railspress/admin/forms-72db290f.css");
+@import url("/assets/railspress/admin/buttons-9c30953a.css");
+@import url("/assets/railspress/admin/badges-4efeb4bd.css");
+@import url("/assets/railspress/admin/lists-adef74c9.css");
+@import url("/assets/railspress/admin/flash-07899b2f.css");
+@import url("/assets/railspress/admin/utilities-0a644e7b.css");
+@import url("/assets/railspress/admin/responsive-adf60778.css");
+@import url("/assets/railspress/admin/components/lexxy-8db53f25.css");
+@import url("/assets/railspress/admin/components/imports-fd544c01.css");
+@import url("/assets/railspress/admin/components/exports-cc795f6f.css");
+@import url("/assets/railspress/admin/components/focal_point-15a09778.css");

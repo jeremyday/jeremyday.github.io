@@ -305,6 +305,22 @@
                 </a>
               </div>
             </li>
+              <li>
+                <div class="flex items-center">
+                  <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
+                    <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd"/>
+                  </svg>
+                  <a href="/bookmarks" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Bookmarks</a>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
+                    <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd"/>
+                  </svg>
+                  <a href="/bookmarks/13052" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Read Later</a>
+                </div>
+              </li>
           </ol>
         </nav>
 
@@ -313,11 +329,55 @@
 -->    <article class="max-w-4xl mx-auto mt-4 px-2 md:mt-8">
       
   <!-- BEGIN app/components/h1.rb
--->    <h1 id="" class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
-      
+-->    <h1 id="read-later" class="text-2xl font-sans font-bold text-gray-700 md:text-balance md:text-4xl md:tracking-tight">
+      Read Later
     </h1>
 <!-- END app/components/h1.rb -->
 
+  <!-- BEGIN app/components/table.rb
+-->      <!-- BEGIN app/components/table_without_headers.rb
+-->    <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg">
+      <table class="relative min-w-full divide-y divide-gray-300">
+        <tbody>
+            <tr class="even:bg-gray-50">
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  Title
+                </td>
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  Read Later
+                </td>
+            </tr>
+            <tr class="even:bg-gray-50">
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  Website
+                </td>
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  <!-- BEGIN app/components/link.rb
+-->    <a href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f=&#39;http://www.instapaper.com/b&#39;,l=d.location,e=encodeURIComponent,p=&#39;?v=3&amp;u=&#39;+e(l.href)%20+&#39;&amp;t=&#39;+e(d.title)%20+&#39;&amp;s=&#39;+e(s),u=f+p;try%7Bif(!/%5E(.*%5C.)?instapaper([%5E.]*)?$/.test(l.host))throw(0);iptstbt();%7Dcatch(z)%7Ba%20=function()%7Bif(!w.open(u,&#39;t&#39;,&#39;toolbar=0,resizable=0,status=1,width=250,height=150&#39;))l.href=u;%7D;if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();%7Dvoid(0)">javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f=&#39;http://www.instapaper.com/b&#39;,l=d.location,e=encodeURIComponent,p=&#39;?v=3&amp;u=&#39;+e(l.href)%20+&#39;&amp;t=&#39;+e(d.title)%20+&#39;&amp;s=&#39;+e(s),u=f+p;try%7Bif(!/%5E(.*%5C.)?instapaper([%5E.]*)?$/.test(l.host))throw(0);iptstbt();%7Dcatch(z)%7Ba%20=function()%7Bif(!w.open(u,&#39;t&#39;,&#39;toolbar=0,resizable=0,status=1,width=250,height=150&#39;))l.href=u;%7D;if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();%7Dvoid(0)</a><!-- END app/components/link.rb -->
+                </td>
+            </tr>
+            <tr class="even:bg-gray-50">
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  Date
+                </td>
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  03/14/2008
+                </td>
+            </tr>
+            <tr class="even:bg-gray-50">
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  Tags
+                </td>
+                <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                  <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/imported">Imported</a><!-- END app/components/link.rb -->
+                </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- END app/components/table_without_headers.rb -->
+<!-- END app/components/table.rb -->
 
     </article>
 <!-- END app/components/article.rb --><!-- END app/views/bookmarks/show.html.erb -->

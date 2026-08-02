@@ -7,7 +7,7 @@
   
 
   <link rel="stylesheet" href="/assets/application-8b441ae0.css" />
-<link rel="stylesheet" href="/assets/tailwind-a986384e.css" />
+<link rel="stylesheet" href="/assets/tailwind-df02a1fe.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 
@@ -110,6 +110,14 @@
 <!-- END app/components/sidebar_item.rb -->
                     <!-- BEGIN app/components/sidebar_item.rb
 -->      <li>
+        <a href="/bookmarks" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg  class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z"/></svg>
+          Bookmarks
+        </a>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+                    <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
         <a href="/books" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
           <svg class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M575.11 443.25L461.51 19.06C458.2 6.7 445.61-3.18 430.15.96L414.7 5.1c-6.18 1.66-11.53 6.4-16.06 14.24-14.03 6.94-52.3 17.21-68 18.22-7.84-4.53-14.85-5.96-21.03-4.3l-15.46 4.14c-2.42.65-4.2 1.95-6.15 3.08V32c0-17.67-14.33-32-32-32h-64c-17.67 0-32 14.33-32 32v64h128l101.66 396.94c3.31 12.36 15.9 22.24 31.36 18.1l15.45-4.14c6.18-1.66 11.53-6.4 16.06-14.24 13.91-6.88 52.18-17.2 68-18.22 7.84 4.53 14.85 5.96 21.03 4.3l15.46-4.14c15.45-4.14 21.41-18.99 18.09-31.35zm-134.4-7.06L348.64 92.37l61.82-16.56 92.07 343.82-61.82 16.56zM0 384h128V128H0v256zM96 0H32C14.33 0 0 14.33 0 32v64h128V32c0-17.67-14.33-32-32-32zM0 480c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H0v64zm160-96h128V128H160v256zm0 96c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64H160v64z"/></svg>
           Books
@@ -198,6 +206,14 @@
         <div class="flex items-center py-2">
           <div aria-hidden="true" class="w-full border-t border-gray-600"></div>
         </div>
+      </li>
+<!-- END app/components/sidebar_item.rb -->
+              <!-- BEGIN app/components/sidebar_item.rb
+-->      <li>
+        <a href="/bookmarks" class="text-gray-400 hover:bg-white/5 hover:text-white group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold">
+          <svg  class="shrink-0 size-6 text-current" fill="currentColor" stroke="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Pro v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.--><path d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z"/></svg>
+          Bookmarks
+        </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
               <!-- BEGIN app/components/sidebar_item.rb
@@ -305,6 +321,14 @@
                   <a href="/tags/2018" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">2018</a>
                 </div>
               </li>
+              <li>
+                <div class="flex items-center">
+                  <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
+                    <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd"/>
+                  </svg>
+                  <a href="/tags/2018/books" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Books</a>
+                </div>
+              </li>
           </ol>
         </nav>
 
@@ -318,8 +342,961 @@
     </h1>
 <!-- END app/components/h1.rb -->
 
+  <div class="my-4 md:my-8">
 
 
+      <div><!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018/books">Books (21)</a><!-- END app/components/link.rb --></div>
+
+  </div>
+
+  <!-- BEGIN app/components/h2.rb
+-->    <h2 id="books" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Books
+    </h2>
+<!-- END app/components/h2.rb -->
+
+  <!-- BEGIN app/components/table.rb
+-->      <div class="overflow-x-auto -mx-4 my-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg">
+        <table class="relative min-w-full divide-y divide-gray-300">
+          <thead>
+            <tr class="even:bg-gray-50">
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Title
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Author
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Started
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Finished
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Pages
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Tags
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/728">Platform Revolution: How Networked Markets Are Transforming the Economy and How to Make Them Work for You</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/96">Geoffrey G. Parker</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">01/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2020">01/20/2020</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">352</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/non-fiction">Non Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/tech">Tech</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/business">Business</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2020">2020</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/712">The Best Horror of the Year, Volume Six</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/82">Ellen Datlow</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">06/01/2019</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">448</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/short-stories">Short Stories</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/horror">Horror</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">2019</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/720">This Dreaming Isle</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/58">Dan Coxon</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">12/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">02/15/2019</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">201</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/horror">Horror</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/short-stories">Short Stories</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/indie">Indie</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/first-edition">First Edition</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">2019</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/717">Senlin Ascends (The Books of Babel)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/142">Josiah Bancroft</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">12/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">01/19/2019</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">448</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2019">2019</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/716">The Fifth Season (The Broken Earth)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/188">N. K. Jemisin</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">12/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">12/31/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">512</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/first-edition">First Edition</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/715">The Black Company (Chronicles of The Black Company #1)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/98">Glen Cook</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/31/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">12/01/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">320</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/714">Compelling Science Fiction Special Companion Issue</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/134">Joe Stech</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/15/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/31/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">98</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/short-stories">Short Stories</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">Fewer Than 200 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/713">The Gap Into Conflict : The Real Story</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/252">Stephen R. Donaldson</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/15/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/29/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">229</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/711">Galactic Empires</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/194">Neil Clarke</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">08/27/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">10/15/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">636</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/short-stories">Short Stories</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/710">The Border</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/224">Robert McCammon</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">07/27/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">08/27/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">456</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/707">Powerful: Building a Culture of Freedom and Responsibility</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/205">Patty McCord</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">06/19/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">08/02/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">228</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/non-fiction">Non Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/business">Business</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/708">All Systems Red: The Murderbot Diaries</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/173">Martha Wells</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">07/05/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">07/19/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">160</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/ebook">Ebook</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">Fewer Than 200 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/706">The Culture Code</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/61">Daniel Coyle</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/29/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">06/18/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">0</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/non-fiction">Non Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/first-edition">First Edition</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/business">Business</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">Fewer Than 200 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/703">House of Suns</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/7">Alastair Reynolds</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/07/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">06/15/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">480</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/science-fiction">Science Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/704">The Master of Heathcrest Hall (The Magicians and Mrs. Quent)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/93">Galen Beckett</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/07/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/26/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">738</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/696">Reaper&#39;s Gale</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/253">Steven Erikson</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2017">09/01/2017</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/07/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">0</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2017">2017</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-lt-200">Fewer Than 200 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/702">Sorcerer to the Crown (A Sorcerer Royal Novel)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/286">Zen Cho</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">01/30/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">03/03/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">384</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/first-edition">First Edition</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/701">The Grace of Kings (The Dandelion Dynasty)</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/151">Ken Liu</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2017">12/01/2017</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">01/29/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">640</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/fantasy">Fantasy</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/hardcover">Hardcover</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/first-edition">First Edition</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/series">Series</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2017">2017</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/700">The Business Blockchain: Promise, Practice, and Application of the Next Internet Technology</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/283">William Mougayar</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">01/10/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">01/24/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">208</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/non-fiction">Non Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/business">Business</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/709">Thinking in Systems: A Primer</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/75">Donella H. Meadows</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">08/04/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">240</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/non-fiction">Non Fiction</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/business">Business</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-200-400">Between 200 and 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+              <tr class="even:bg-gray-50 hover:bg-gray-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/books/705">Collected Stories of William Faulkner</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/authors/280">William Faulkner</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">04/26/2018</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">912</a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <div class="flex gap-2 items-center flex-wrap">
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/literature">Literature</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/short-stories">Short Stories</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/trade-paperback">Trade Paperback</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2018">2018</a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/pages-gt-400">More Than 400 Pages</a><!-- END app/components/link.rb -->
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+<!-- END app/components/table.rb -->
+
+  <!-- BEGIN app/components/pagination.rb
+--><nav class="mt-4 flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+  <div class="-mt-px flex w-0 flex-1">
+  </div>
+  
+  <div class="hidden md:-mt-px md:flex">
+        <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+        <a href="/tags/2018/page/1" aria-current="page" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600">1</a>
+  </div>
+  
+  <div class="-mt-px flex w-0 flex-1 justify-end">
+  </div>
+</nav>
+<!-- END app/components/pagination.rb -->
 
     </article>
 <!-- END app/components/article.rb --><!-- END app/views/tags/show.html.erb -->

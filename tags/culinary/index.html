@@ -343,27 +343,24 @@
 <!-- END app/components/h1.rb -->
 
   <div class="mt-4 md:mt-8">
-
-
-
+        <div><!-- BEGIN app/components/link.rb
+-->    <a href="/tags/culinary/media">Mediums (2)</a><!-- END app/components/link.rb --></div>
   </div>
 
-  <!-- BEGIN app/components/h2.rb
+  <div class="mt-4 md:mt-8">
+    <!-- BEGIN app/components/h2.rb
 -->    <h2 id="mediums" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
       Mediums
     </h2>
 <!-- END app/components/h2.rb -->
 
-  <!-- BEGIN app/components/table.rb
+    <!-- BEGIN app/components/table.rb
 -->      <div class="overflow-x-auto -mx-4 mt-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg">
         <table class="relative min-w-full divide-y divide-gray-300">
           <thead>
             <tr class="even:bg-gray-50">
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   Title
-                </th>
-                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                  Slug
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   Media Type
@@ -380,11 +377,8 @@
               <tr class="even:bg-gray-50 hover:bg-gray-100">
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
-                        The Great British Baking Show
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        the-great-british-baking-show
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/medias/7">The Great British Baking Show</a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
@@ -396,17 +390,15 @@
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
-                        culinary
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/culinary">Culinary</a><!-- END app/components/link.rb -->
                   </td>
               </tr>
               <tr class="even:bg-gray-50 hover:bg-gray-100">
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
-                        Top Chef
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        top-chef
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/medias/9">Top Chef</a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
@@ -418,7 +410,8 @@
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
-                        culinary
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/culinary">Culinary</a><!-- END app/components/link.rb -->
                   </td>
               </tr>
           </tbody>
@@ -426,7 +419,7 @@
       </div>
 <!-- END app/components/table.rb -->
 
-  <!-- BEGIN app/components/pagination.rb
+    <!-- BEGIN app/components/pagination.rb
 --><nav class="mt-4 flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
   <div class="-mt-px flex w-0 flex-1">
   </div>
@@ -440,6 +433,7 @@
   </div>
 </nav>
 <!-- END app/components/pagination.rb -->
+  </div>
 
     </article>
 <!-- END app/components/article.rb --><!-- END app/views/tags/show.html.erb -->

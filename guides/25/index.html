@@ -394,10 +394,13 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>Your Mileage May Vary. Any advice you get about <a href="/guides/21#ultrarunning">ultrarunning</a> is likely to not quite apply to you and your situation. You need to try things out to find out what works for you. Adaptability is one of the key ingredients to ultra success.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>Your Mileage May Vary. Any advice you get about <a href="/guides/21#ultrarunning">ultrarunning</a> is likely to not quite apply to you and your situation. You need to try things out to find out what works for you. Adaptability is one of the key ingredients to ultra success.</p>
 
 <p>This could also be a pun, given that <a href="/guides/20#trail-miles">trail miles</a> are never exact and even two of the exact same <a href="/guides/7#gps-watch">GPS watches</a> on the same course can report different distances.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -596,7 +599,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

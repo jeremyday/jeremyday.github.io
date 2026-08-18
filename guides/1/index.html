@@ -394,12 +394,15 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>An aid station is a table, tent, fire, or some other oasis in the middle of an <a href="/guides/21#ultramarathon">ultra</a>. Usually these are every five to ten miles during a <a href="/guides/18#race">race</a>, but that can vary widely depending on the race. Usually at an aid station you can find a variety of things to drink, such as water, soda, ginger ale, and sports drinks of various varieties. You’ll also usually find a number of different things to eat, such as cookies, potato chips, pretzels, boiled potatoes, bacon, sausage, pancakes, candy, bananas, oranges, and any number of other things to help runners get to the finish line.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>An aid station is a table, tent, fire, or some other oasis in the middle of an <a href="/guides/21#ultramarathon">ultra</a>. Usually these are every five to ten miles during a <a href="/guides/18#race">race</a>, but that can vary widely depending on the race. Usually at an aid station you can find a variety of things to drink, such as water, soda, ginger ale, and sports drinks of various varieties. You’ll also usually find a number of different things to eat, such as cookies, potato chips, pretzels, boiled potatoes, bacon, sausage, pancakes, candy, bananas, oranges, and any number of other things to help runners get to the finish line.</p>
 
 <p>Aid stations are manned by <a href="/guides/22#volunteers">volunteers</a> who are there to help with whatever you might need. If the aid station is a <a href="/guides/4#drop-bag">drop bag</a> aid station a volunteer will often ask to get your bag for you. If there’s anything you need at an aid station that you don’t see right away–it’s fantastically easy to miss obvious things when your brain is fuzzy mid-race–ask a volunteer. Helping you is why they are there.</p>
 
 <p class="tip">Treat aid station <a href="/guides/22#volunteers">volunteers</a> well and with respect, because if you do enough of these <a href="/guides/18#race">races</a> you’ll get into one or two where you won’t finish without their help.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -451,8 +454,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>The person in charge of the <a href="/guides/1#aid-station">aid station</a>. Ask and <a href="/guides/22#volunteers">volunteer</a> and they will point you to the aid station captain. If you need to <a href="/guides/4#drop">drop</a>, talk to this person. They will likely record your <a href="/guides/2#bib">bib number</a> and communicate with the <a href="/guides/18#race-director">race director</a>.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>The person in charge of the <a href="/guides/1#aid-station">aid station</a>. Ask and <a href="/guides/22#volunteers">volunteer</a> and they will point you to the aid station captain. If you need to <a href="/guides/4#drop">drop</a>, talk to this person. They will likely record your <a href="/guides/2#bib">bib number</a> and communicate with the <a href="/guides/18#race-director">race director</a>.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -651,7 +657,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

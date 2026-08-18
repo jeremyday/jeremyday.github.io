@@ -394,10 +394,22 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        By definition a marathon is 26.2 miles. An [ultramarathon](/guides/21#ultramarathon) is technically anything longer than that.
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>By definition a marathon is 26.2 miles. An <a href="/guides/21#ultramarathon">ultramarathon</a> is technically anything longer than that.</p>
+
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
---><!-- END app/components/backlinks.rb -->
+-->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
+        <div class="text-gray-500 font-sans font-bold">Backlinks</div>
+    
+          <!-- BEGIN app/components/link.rb
+-->    <a href="/pages/about">
+        About
+    </a><!-- END app/components/link.rb -->
+      </div>
+<!-- END app/components/backlinks.rb -->
 
     </div>
 <!-- END app/components/markdown_content_container.rb -->
@@ -414,8 +426,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>See <a href="/guides/20#trail-marking">trail marking</a>.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>See <a href="/guides/20#trail-marking">trail marking</a>.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 --><!-- END app/components/backlinks.rb -->
@@ -435,10 +450,13 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p><a href="/guides/19#spikes">Spikes</a> you can attach to your <a href="/guides/19#shoes">shoes</a> to give you traction on <a href="/guides/9#ice">icy</a> surfaces. They can be a pain in the ass to get on your <a href="/guides/19#shoes">shoes</a>, but they are absolutely worth it. Get some if you’re going to be dealing with <a href="/guides/9#ice">ice</a> while <a href="/guides/20#training">training</a> or <a href="/guides/18#race">racing</a>.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p><a href="/guides/19#spikes">Spikes</a> you can attach to your <a href="/guides/19#shoes">shoes</a> to give you traction on <a href="/guides/9#ice">icy</a> surfaces. They can be a pain in the ass to get on your <a href="/guides/19#shoes">shoes</a>, but they are absolutely worth it. Get some if you’re going to be dealing with <a href="/guides/9#ice">ice</a> while <a href="/guides/20#training">training</a> or <a href="/guides/18#race">racing</a>.</p>
 
 <p><a href="https://www.rei.com/product/890608/kahtoola-microspikes-traction-system">Kahtoola MICROspikes</a> and <a href="https://www.rei.com/product/199019/yaktrax-run-traction-device">Yaktrax</a> are examples of microspikes.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -466,8 +484,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>Better than <a href="/guides/19#sand">sand</a>.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>Better than <a href="/guides/19#sand">sand</a>.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -503,8 +524,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>When a <a href="/guides/16#pacer">pacer</a> carries <a href="/guides/7#gear">gear</a> for their runner so their runner doesn’t have to do this. This is illegal in just about every <a href="/guides/18#race">race</a>, and even if it is not explicitly called out as illegal by the <a href="/guides/18#race-director">race director</a> it is considered bad form.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>When a <a href="/guides/16#pacer">pacer</a> carries <a href="/guides/7#gear">gear</a> for their runner so their runner doesn’t have to do this. This is illegal in just about every <a href="/guides/18#race">race</a>, and even if it is not explicitly called out as illegal by the <a href="/guides/18#race-director">race director</a> it is considered bad form.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -703,7 +727,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

@@ -394,13 +394,20 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>Running distances longer than a [marathon](/guides/13#marathon), which is 26.2 miles (42 km). We traditional consider ultras as starting at 50k and going as far as you can imagine.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>Running distances longer than a [marathon](/guides/13#marathon), which is 26.2 miles (42 km). We traditional consider ultras as starting at 50k and going as far as you can imagine.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
         <div class="text-gray-500 font-sans font-bold">Backlinks</div>
     
+          <!-- BEGIN app/components/link.rb
+-->    <a href="/pages/about">
+        About
+    </a><!-- END app/components/link.rb -->
           <!-- BEGIN app/components/link.rb
 -->    <a href="/guides/1#aid-station">
         A » Aid Station
@@ -443,8 +450,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>Running <a href="/guides/21#ultramarathon">ultramarathons</a>.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>Running <a href="/guides/21#ultramarathon">ultramarathons</a>.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -651,7 +661,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

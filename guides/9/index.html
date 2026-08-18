@@ -394,10 +394,13 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>Running on this shit sucks. Make certain to have some <a href="/guides/19#spikes">spikes</a> or your life will be pretty awful.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>Running on this shit sucks. Make certain to have some <a href="/guides/19#spikes">spikes</a> or your life will be pretty awful.</p>
 
 <p>Ice is a godsend during hot <a href="/guides/18#race">races</a>. If you wear a <a href="/guides/8#hat">hat</a> you can put some ice under it to help keep your head cool. If you wear a <a href="/guides/2#buff">Buff</a> around your neck you can use it to keep ice close to your skin. Or, in a pinch, you can just dunk a <a href="/guides/8#hat">hat</a> or <a href="/guides/2#buff">Buff</a> in cold water.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -608,7 +611,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

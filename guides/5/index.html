@@ -394,8 +394,11 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>How much climbing you do during a race. For instance, <a href="/races/scout-mountain-100-miler">Scout Mountain 100</a> has 23,000 feet of elevation gain, and <a href="/races/divide-100">Divide 100</a> has 29,000 feet elevation gain.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>How much climbing you do during a race. For instance, <a href="/races/scout-mountain-100-miler">Scout Mountain 100</a> has 23,000 feet of elevation gain, and <a href="/races/divide-100">Divide 100</a> has 29,000 feet elevation gain.</p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -431,10 +434,13 @@
       <!-- BEGIN app/components/markdown_content_container.rb
 -->    <div class="content mt-4 md:mt-8">
       
-        <p>A picture of the elevation change for a course over distance. For instance, here is the elevation profile for <a href="/races/divide-100">Divide 100</a>. These can be difficult to read because it’s possible for a race without a lot of <a href="/guides/5#elevation-gain">elevation gain</a> to look like it has a ton of climbing. I find it helpful to look at what look like large climbs in the elevation profile and estimate how many feet of climbing there are per mile of climb.</p>
+        <!-- BEGIN app/components/markdown.rb
+-->    <div class="mt-5 content">
+      <p>A picture of the elevation change for a course over distance. For instance, here is the elevation profile for <a href="/races/divide-100">Divide 100</a>. These can be difficult to read because it’s possible for a race without a lot of <a href="/guides/5#elevation-gain">elevation gain</a> to look like it has a ton of climbing. I find it helpful to look at what look like large climbs in the elevation profile and estimate how many feet of climbing there are per mile of climb.</p>
 
 <p><img src="/assets/images/elevation-profile.png" alt="Divide 100 Elevation Profile" /></p>
 
+    </div><!-- END app/components/markdown.rb -->
 
         <!-- BEGIN app/components/backlinks.rb
 -->      <div class="text-sm text-gray-500 max-w-4xl mt-2 mx-auto">
@@ -633,7 +639,8 @@
     <footer class="bg-white">
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
-          <div class="flex justify-center gap-x-6 md:order-2">
+          <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">GitHub</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">

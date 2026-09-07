@@ -94,7 +94,7 @@
 -->    <div >
       <svg class="size-6 shrink-0 text-current" fill="currentColor" stroke="none" stroke-width="1.5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
     </div><!-- END app/components/icon.rb -->
-          Race Calendar
+          Events Calendar
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -229,7 +229,7 @@
 -->    <div >
       <svg class="size-6 shrink-0 text-current" fill="currentColor" stroke="none" stroke-width="1.5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
     </div><!-- END app/components/icon.rb -->
-          Race Calendar
+          Events Calendar
         </a>
       </li>
 <!-- END app/components/sidebar_item.rb -->
@@ -427,6 +427,16 @@
         </a>
     </span>
 <!-- END app/components/split_button.rb -->
+      <!-- BEGIN app/components/split_button.rb
+-->    <span class="isolate inline-flex rounded-md shadow-xs">
+        <span class="relative inline-flex items-center gap-x-1.5 rounded-l-md bg-gray-50 px-3 py-2 text-sm font-semibold text-gray-300 ring-1 ring-gray-300 ring-inset focus:z-10">
+          Race Instances
+        </span>
+        <span class="relative -ml-px inline-flex items-center rounded-r-md bg-gray-50 px-3 py-2 text-sm font-semibold text-gray-300 ring-1 ring-gray-300 ring-inset focus:z-10">
+          1
+        </span>
+    </span>
+<!-- END app/components/split_button.rb -->
   </div>
 
   <div class="mt-4 md:mt-8">
@@ -440,7 +450,7 @@
 -->      <div class="overflow-x-auto -mx-4 mt-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg">
         <table class="relative min-w-full divide-y divide-gray-300">
           <thead>
-            <tr id="table-42623-row-1" class="even:bg-gray-50">
+            <tr id="table-42643-row-1" class="even:bg-gray-50">
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   
                 </th>
@@ -474,6 +484,88 @@
             </tr>
           </thead>
           <tbody>
+              <tr id="table-42643-row-2" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2026">
+        08/19/2026
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <!-- BEGIN app/components/items_center.rb
+-->    <div class="flex gap-2 items-center ">
+      
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/calendar_races/103">
+        La Garita 200 2026
+    </a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="https://www.tempestadventures.com/la-garita-200/about">
+        <!-- BEGIN app/components/icon.rb
+-->    <div >
+      <svg class="size-3 shrink-0 text-current" fill="currentColor" stroke="none" stroke-width="1.5"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.6,0,334.4.17A14.4,14.4,0,0,0,320,14.57V47.88a14.4,14.4,0,0,0,14.69,14.4l73.63-2.72,2.06,2.06L131.52,340.49a12,12,0,0,0,0,17l23,23a12,12,0,0,0,17,0L450.38,101.62l2.06,2.06-2.72,73.63A14.4,14.4,0,0,0,464.12,192h33.31a14.4,14.4,0,0,0,14.4-14.4L512,14.4A14.4,14.4,0,0,0,497.6,0ZM432,288H416a16,16,0,0,0-16,16V458a6,6,0,0,1-6,6H54a6,6,0,0,1-6-6V118a6,6,0,0,1,6-6H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V304A16,16,0,0,0,432,288Z"/></svg>
+    </div><!-- END app/components/icon.rb -->
+    </a><!-- END app/components/link.rb -->
+
+    </div>
+<!-- END app/components/items_center.rb -->                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        201.45 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        31,348 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        155.6 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/locations/277">
+        South Fork, CO
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/race_companies/14">
+        Tempest Adventures
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                      <!-- BEGIN app/components/items_center.rb
+-->    <div class="flex gap-2 items-center ">
+      
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2026">
+        2026
+    </a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/co">
+        Colorado
+    </a><!-- END app/components/link.rb -->
+                            <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/south-fork-co">
+        South Fork Co
+    </a><!-- END app/components/link.rb -->
+
+    </div>
+<!-- END app/components/items_center.rb -->                  </td>
+              </tr>
           </tbody>
         </table>
       </div>
@@ -485,15 +577,11 @@
   </div>
   
   <div class="hidden md:-mt-px md:flex">
+        <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+        <a href="/tags/south-fork-co/calendar_races/page/1" aria-current="page" class="inline-flex items-center border-t-2 border-indigo-500 px-4 pt-4 text-sm font-medium text-indigo-600">1</a>
   </div>
   
   <div class="-mt-px flex w-0 flex-1 justify-end">
-      <a href="/tags/south-fork-co/calendar_races/page/2" class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-        Next
-        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="ml-3 size-5 text-gray-400">
-          <path d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd" fill-rule="evenodd" />
-        </svg>
-      </a>
   </div>
 </nav>
 <!-- END app/components/pagination.rb -->

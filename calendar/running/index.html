@@ -411,7 +411,7 @@
           All
         </a>
         <a href="/calendar/all" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
-          192
+          191
         </a>
     </span>
 <!-- END app/components/split_button.rb -->
@@ -421,7 +421,7 @@
           Maybe Running
         </a>
         <a href="/calendar/maybe_running" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
-          7
+          5
         </a>
     </span>
 <!-- END app/components/split_button.rb -->
@@ -431,7 +431,7 @@
           Ran
         </a>
         <a href="/calendar/ran" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
-          84
+          83
         </a>
     </span>
 <!-- END app/components/split_button.rb -->
@@ -441,7 +441,7 @@
           Running
         </span>
         <span class="relative -ml-px inline-flex items-center rounded-r-md bg-gray-50 px-3 py-2 text-sm font-semibold text-gray-300 ring-1 ring-gray-300 ring-inset focus:z-10">
-          1
+          2
         </span>
     </span>
 <!-- END app/components/split_button.rb -->
@@ -451,7 +451,7 @@
           Maybe or Running
         </a>
         <a href="/calendar/maybe_or_running" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
-          8
+          7
         </a>
     </span>
 <!-- END app/components/split_button.rb -->
@@ -479,6 +479,242 @@
   <!-- BEGIN app/components/content_container.rb
 -->    <div class="mt-4 md:mt-8">
       
+      <!-- BEGIN app/components/calendar.rb
+-->    <div class="lg:flex lg:h-full lg:flex-col">
+      <header class="flex items-center justify-between border-b border-gray-200 px-6 py-4 lg:flex-none">
+        <!-- Month and Year -->
+        <h1 class="text-base font-semibold text-gray-900">
+          <time datetime="2026-10">October 2026</time>
+        </h1>
+
+        <!-- Calendar Controls -->
+        <div class="flex items-center">
+        </div>
+      </header>
+
+      <div class="shadow-sm ring-1 ring-black/5 lg:flex lg:flex-auto lg:flex-col">
+        <!-- Day Column Headers -->
+        <div class="grid grid-cols-7 gap-px border-b border-gray-300 bg-gray-200 text-center text-xs/6 font-semibold text-gray-700 lg:flex-none">
+          <div class="flex justify-center bg-white py-2">
+            <span>M</span>
+            <span class="sr-only sm:not-sr-only">on</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>T</span>
+            <span class="sr-only sm:not-sr-only">ue</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>W</span>
+            <span class="sr-only sm:not-sr-only">ed</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>T</span>
+            <span class="sr-only sm:not-sr-only">hu</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>F</span>
+            <span class="sr-only sm:not-sr-only">ri</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>S</span>
+            <span class="sr-only sm:not-sr-only">at</span>
+          </div>
+          <div class="flex justify-center bg-white py-2">
+            <span>S</span>
+            <span class="sr-only sm:not-sr-only">un</span>
+          </div>
+        </div>
+
+        <!-- Calendar Days -->
+        <div class="flex bg-gray-200 text-xs/6 text-gray-700 lg:flex-auto">
+          <div class="hidden w-full lg:grid lg:grid-cols-7 lg:grid-rows-5 lg:gap-px">
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-09-28" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">28</time>
+      </div>
+<!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-09-29" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">29</time>
+      </div>
+<!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-09-30" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">30</time>
+      </div>
+<!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-01" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">1</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-02" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">2</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-03" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">3</time>
+          <ol class="mt-2">
+              <li>
+                <!-- BEGIN app/components/calendar_event.rb
+-->    <a href="/calendar_races/55" class="group flex bg-red-50 text-red-700 inset-ring-red-600/10">
+      <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Above the Clouds 50k 2026</p>
+    </a><!-- END app/components/calendar_event.rb -->
+              </li>
+          </ol>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-04" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">4</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-05" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">5</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-06" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">6</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-07" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">7</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-08" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">8</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-09" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">9</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-10" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">10</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-11" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">11</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-12" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">12</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-13" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">13</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-14" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">14</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-15" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">15</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-16" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">16</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-17" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">17</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-18" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">18</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-19" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">19</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-20" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">20</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-21" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">21</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-22" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">22</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-23" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">23</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-24" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">24</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-25" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">25</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-26" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">26</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-27" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">27</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-28" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">28</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-29" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">29</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-30" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">30</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div data-is-current-month class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-10-31" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">31</time>
+      </div>
+    <!-- END app/components/calendar_day.rb -->
+              <!-- BEGIN app/components/calendar_day.rb
+-->      <div class="group relative bg-gray-50 px-3 py-2 text-gray-500 data-is-current-month:bg-white">
+        <time datetime="2026-11-01" class="relative group-not-data-is-current-month:opacity-75 in-data-is-today:flex in-data-is-today:size-6 in-data-is-today:items-center in-data-is-today:justify-center in-data-is-today:rounded-full in-data-is-today:bg-indigo-600 in-data-is-today:font-semibold in-data-is-today:text-white">1</time>
+      </div>
+<!-- END app/components/calendar_day.rb -->
+          </div>
+        </div>
+      </div>
+    </div><!-- END app/components/calendar.rb -->
       <!-- BEGIN app/components/calendar.rb
 -->    <div class="lg:flex lg:h-full lg:flex-col">
       <header class="flex items-center justify-between border-b border-gray-200 px-6 py-4 lg:flex-none">

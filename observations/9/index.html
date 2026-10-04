@@ -420,16 +420,16 @@
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
       }).addTo(map);
-      var markerContents = `<div class="content mt-4 md:mt-8"><p>Pikes Peak is called “America’s Mountain”, because it was the inspiration for the song <em>America the Beautiful</em>. From the trailhead in <a href="/locations/288">Manitou Springs</a>, the Barr Camp Trail goes about 13.1 miles, with about 7,500 feet of climbing, to the top of Pikes Peak. It’s intense, and the views are spectacular. There is the <a href="/races/242">Pikes Peak Ascent</a>, which is a half marathon going up the Barr Camp Trail, and the <a href="/races/243">Pikes Peak Marathon</a>, which goes up and down the Barr Camp Trail. I haven’t done either, but I want to do both. It’s possible to do both on the same weekend.</p>
+      var markerContent = `<div class="content mt-4 md:mt-8"><p>Pikes Peak is called “America’s Mountain”, because it was the inspiration for the song <em>America the Beautiful</em>. From the trailhead in <a href="/locations/288">Manitou Springs</a>, the Barr Camp Trail goes about 13.1 miles, with about 7,500 feet of climbing, to the top of Pikes Peak. It’s intense, and the views are spectacular. There is the <a href="/races/242">Pikes Peak Ascent</a>, which is a half marathon going up the Barr Camp Trail, and the <a href="/races/243">Pikes Peak Marathon</a>, which goes up and down the Barr Camp Trail. I haven’t done either, but I want to do both. It’s possible to do both on the same weekend.</p>
 </div>`
       var markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="pikes-peak" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Pikes Peak
     </h3>
 <!-- END app/components/h3.rb -->`;
-      markerContents = `${markerTitle}${markerContents}`;
+      markerContent = `${markerTitle}${markerContent}`;
 
-      L.marker(markerLocation).addTo(map).bindPopup(markerContents);
+      L.marker(markerLocation).addTo(map).bindPopup(markerContent);
   </script>
 
 

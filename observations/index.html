@@ -409,76 +409,76 @@
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
       }).addTo(map);
-      var markerContents;
+      var markerContent;
       var markerLocation;
       var markerTitle;
 
-        markerContents = `<div class="content mt-4 md:mt-8"><p>Pikes Peak is called “America’s Mountain”, because it was the inspiration for the song <em>America the Beautiful</em>. From the trailhead in <a href="/locations/288">Manitou Springs</a>, the Barr Camp Trail goes about 13.1 miles, with about 7,500 feet of climbing, to the top of Pikes Peak. It’s intense, and the views are spectacular. There is the <a href="/races/242">Pikes Peak Ascent</a>, which is a half marathon going up the Barr Camp Trail, and the <a href="/races/243">Pikes Peak Marathon</a>, which goes up and down the Barr Camp Trail. I haven’t done either, but I want to do both. It’s possible to do both on the same weekend.</p>
+        markerContent = `<div class="content mt-4 md:mt-8"><p>Pikes Peak is called “America’s Mountain”, because it was the inspiration for the song <em>America the Beautiful</em>. From the trailhead in <a href="/locations/288">Manitou Springs</a>, the Barr Camp Trail goes about 13.1 miles, with about 7,500 feet of climbing, to the top of Pikes Peak. It’s intense, and the views are spectacular. There is the <a href="/races/242">Pikes Peak Ascent</a>, which is a half marathon going up the Barr Camp Trail, and the <a href="/races/243">Pikes Peak Marathon</a>, which goes up and down the Barr Camp Trail. I haven’t done either, but I want to do both. It’s possible to do both on the same weekend.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="pikes-peak" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Pikes Peak
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.84200482848217, -105.04191639581708];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
-        markerContents = `<div class="content mt-4 md:mt-8"><p>So many happy doggos.</p>
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
+        markerContent = `<div class="content mt-4 md:mt-8"><p>So many happy doggos.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="bear-creek-dog-park" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Bear Creek Dog Park
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.825264, -104.859758];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
-        markerContents = `<div class="content mt-4 md:mt-8"><p>There’s a house up this way with some really great bird houses. My favorite is a tiny bird house that has it’s own tiny little bird house.</p>
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
+        markerContent = `<div class="content mt-4 md:mt-8"><p>There’s a house up this way with some really great bird houses. My favorite is a tiny bird house that has it’s own tiny little bird house.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="fun-birdhouses" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Fun Birdhouses
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.813223, -104.865215];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
-        markerContents = `<div class="content mt-4 md:mt-8"><p>From the parking lot at the top of <a href="/observations/5">North Cheyenne Canyon Park</a> it is a 4,000 foot climb in 6.5-ish miles to the top of Mount Rosa. It’s a really great hike, and the run down starts <em>extremely</em> technical for the first 1,500 feet of descent, and then alternates between smooth and easily runnable and marginally technical.</p>
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
+        markerContent = `<div class="content mt-4 md:mt-8"><p>From the parking lot at the top of <a href="/observations/5">North Cheyenne Canyon Park</a> it is a 4,000 foot climb in 6.5-ish miles to the top of Mount Rosa. It’s a really great hike, and the run down starts <em>extremely</em> technical for the first 1,500 feet of descent, and then alternates between smooth and easily runnable and marginally technical.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="mount-rosa" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Mount Rosa
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.75482167094102, -104.94656964786556];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
-        markerContents = `<div class="content mt-4 md:mt-8"><p>There are <em>tons</em> of serious mountain trails up here. One of my favorites is the 4,000 foot climb up to the top of <a href="/observations/6">Mount Rosa</a>.</p>
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
+        markerContent = `<div class="content mt-4 md:mt-8"><p>There are <em>tons</em> of serious mountain trails up here. One of my favorites is the 4,000 foot climb up to the top of <a href="/observations/6">Mount Rosa</a>.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="north-cheyenne-canyon-park" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       North Cheyenne Canyon Park
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.790332254360834, -104.90405148560939];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
-        markerContents = `<div class="content mt-4 md:mt-8"><p>Probably my favorite trail in <a href="/locations/220">Colorado Springs</a>.</p>
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
+        markerContent = `<div class="content mt-4 md:mt-8"><p>Probably my favorite trail in <a href="/locations/220">Colorado Springs</a>.</p>
 </div>`
         markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="section-16-trailhead" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Section 16 Trailhead
     </h3>
 <!-- END app/components/h3.rb -->`;
-        markerContents = `${markerTitle}${markerContents}`;
+        markerContent = `${markerTitle}${markerContent}`;
         markerLocation = [38.823247, -104.890303];
 
-        L.marker(markerLocation).addTo(map).bindPopup(markerContents);
+        L.marker(markerLocation).addTo(map).bindPopup(markerContent);
   </script>
 
 

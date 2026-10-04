@@ -420,16 +420,16 @@
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
       }).addTo(map);
-      var markerContents = `<div class="content mt-4 md:mt-8"><p>From the parking lot at the top of <a href="/observations/5">North Cheyenne Canyon Park</a> it is a 4,000 foot climb in 6.5-ish miles to the top of Mount Rosa. It’s a really great hike, and the run down starts <em>extremely</em> technical for the first 1,500 feet of descent, and then alternates between smooth and easily runnable and marginally technical.</p>
+      var markerContent = `<div class="content mt-4 md:mt-8"><p>From the parking lot at the top of <a href="/observations/5">North Cheyenne Canyon Park</a> it is a 4,000 foot climb in 6.5-ish miles to the top of Mount Rosa. It’s a really great hike, and the run down starts <em>extremely</em> technical for the first 1,500 feet of descent, and then alternates between smooth and easily runnable and marginally technical.</p>
 </div>`
       var markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="mount-rosa" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Mount Rosa
     </h3>
 <!-- END app/components/h3.rb -->`;
-      markerContents = `${markerTitle}${markerContents}`;
+      markerContent = `${markerTitle}${markerContent}`;
 
-      L.marker(markerLocation).addTo(map).bindPopup(markerContents);
+      L.marker(markerLocation).addTo(map).bindPopup(markerContent);
   </script>
 
 

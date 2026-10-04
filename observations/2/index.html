@@ -420,16 +420,16 @@
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
       }).addTo(map);
-      var markerContents = `<div class="content mt-4 md:mt-8"><p>So many happy doggos.</p>
+      var markerContent = `<div class="content mt-4 md:mt-8"><p>So many happy doggos.</p>
 </div>`
       var markerTitle = `<!-- BEGIN app/components/h3.rb
 -->    <h3 id="bear-creek-dog-park" class="text-l font-sans font-bold text-gray-700 md:text-balance md:text-xl md:tracking-tight">
       Bear Creek Dog Park
     </h3>
 <!-- END app/components/h3.rb -->`;
-      markerContents = `${markerTitle}${markerContents}`;
+      markerContent = `${markerTitle}${markerContent}`;
 
-      L.marker(markerLocation).addTo(map).bindPopup(markerContents);
+      L.marker(markerLocation).addTo(map).bindPopup(markerContent);
   </script>
 
 

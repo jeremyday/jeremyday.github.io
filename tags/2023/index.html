@@ -3,7 +3,7 @@
 <html class="h-full bg-white">
 <head>
     <title>
-      Books | Your First 100 Miler
+      Exercises | Your First 100 Miler
     </title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -400,7 +400,7 @@
                   <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-400">
                     <path d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd"/>
                   </svg>
-                  <a href="/tags/2023/books" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Books</a>
+                  <a href="/tags/2023/exercises" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Exercises</a>
                 </div>
               </li>
           </ol>
@@ -417,6 +417,16 @@
 <!-- END app/components/h1.rb -->
 
   <div class="mt-4 md:mt-8">
+      <!-- BEGIN app/components/split_button.rb
+-->    <span class="isolate inline-flex rounded-md shadow-xs">
+        <a href="/tags/2023/exercises" class="relative inline-flex items-center gap-x-1.5 rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
+          Exercises
+        </a>
+        <a href="/tags/2023/exercises" class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
+          26
+        </a>
+    </span>
+<!-- END app/components/split_button.rb -->
       <!-- BEGIN app/components/split_button.rb
 -->    <span class="isolate inline-flex rounded-md shadow-xs">
         <a href="/tags/2023/books" class="relative inline-flex items-center gap-x-1.5 rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:z-10">
@@ -451,8 +461,8 @@
 
   <div class="mt-4 md:mt-8">
     <!-- BEGIN app/components/h2.rb
--->    <h2 id="books" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
-      Books
+-->    <h2 id="exercises" class="text-xl font-sans font-bold text-gray-700 md:text-balance md:text-2xl md:tracking-tight">
+      Exercises
     </h2>
 <!-- END app/components/h2.rb -->
 
@@ -460,24 +470,27 @@
 -->      <div class="overflow-x-auto -mx-4 mt-10 ring-1 ring-gray-300 sm:mx-0 sm:rounded-lg">
         <table class="relative min-w-full divide-y divide-gray-300">
           <thead>
-            <tr id="table-33633-row-1" class="even:bg-gray-50">
+            <tr id="table-33723-row-1" class="even:bg-gray-50">
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   
+                </th>
+                <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                  Date
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   Title
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                  Author
+                  Distance
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                  Started
+                  Elevation Gain
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                  Finished
+                  Gain/Mile
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                  Pages
+                  Duration
                 </th>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                   Tags
@@ -485,7 +498,7 @@
             </tr>
           </thead>
           <tbody>
-              <tr id="table-33633-row-2" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+              <tr id="table-33723-row-2" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         
@@ -493,37 +506,720 @@
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/books/884">
-        Velvet Was the Night
+-->    <a href="/tags/2023">
+        12/31/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/authors/246">
-        Silvia Moreno-Garcia
+-->    <a href="/walks/1076">
+        2023-12-31 Colorado Springs Walking
     </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.38 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        263.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        190.6 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:29:37
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
-        12/26/2023
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-3" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/31/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2024">
-        01/05/2024
+-->    <a href="/runs/1077">
+        2023-12-31 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        3.79 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        369.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        97.4 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:38:04
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-4" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/30/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        304
+-->    <a href="/walks/1078">
+        2023-12-30 Colorado Springs Walking
     </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        5.26 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        802.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        152.5 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        02:03:41
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-5" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/28/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1079">
+        2023-12-28 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        2.63 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        526.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        200.0 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:40:41
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-6" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/24/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1080">
+        2023-12-24 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        4.09 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        728.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        178.0 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:59:03
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-7" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/23/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/1081">
+        2023-12-23 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.02 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        163.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        159.8 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:10:34
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-8" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/21/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1082">
+        2023-12-21 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.38 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        250.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        181.2 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:23:23
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-9" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/20/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/1083">
+        2023-12-20 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        6.75 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        611.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        90.5 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        01:07:33
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-10" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/18/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1084">
+        2023-12-18 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        0.68 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        124.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        182.4 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:10:45
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-11" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/15/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1085">
+        2023-12-15 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        2.63 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        557.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        211.8 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:45:19
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-12" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/11/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1086">
+        2023-12-11 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.43 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        259.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        181.1 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:20:57
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-13" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/10/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1087">
+        2023-12-10 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.99 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        484.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        243.2 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:32:18
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-14" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/08/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1088">
+        2023-12-08 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.24 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        226.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        182.3 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:20:23
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-15" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/07/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1089">
+        2023-12-07 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        2.62 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        551.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        210.3 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:42:03
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-16" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/06/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1090">
+        2023-12-06 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        3.32 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        647.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        194.9 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:53:51
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-17" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/03/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1091">
+        2023-12-03 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        3.68 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        690.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        187.5 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        01:18:29
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-18" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        12/02/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/203">
+        2023-12-02 Colorado Cold Rush 50k
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        50k
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        4,323 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        140.9 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        07:00:00
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
@@ -531,38 +1227,18 @@
 -->    <div class=" flex gap-2 items-center ">
       
                             <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/noir">
-        Noir
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
         2023
     </a><!-- END app/components/link.rb -->
                             <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2024">
-        2024
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
+-->    <a href="/tags/50k">
+        50k
     </a><!-- END app/components/link.rb -->
 
     </div>
 <!-- END app/components/items_center.rb -->                  </td>
               </tr>
-              <tr id="table-33633-row-3" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+              <tr id="table-33723-row-19" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         
@@ -570,37 +1246,333 @@
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/books/883">
-        Last to Leave the Room: A Novel
+-->    <a href="/tags/2023">
+        11/30/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/authors/38">
-        Caitlin Starling
+-->    <a href="/walks/1092">
+        2023-11-30 Colorado Springs Walking
     </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        4.1 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        716.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        174.6 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:56:04
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
-        12/17/2023
+        2023
     </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-20" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
-        12/26/2023
+        11/29/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        320
+-->    <a href="/runs/1093">
+        2023-11-29 Colorado Springs Trail Running
     </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        6.26 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        913.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        145.8 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        01:07:22
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-21" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/27/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1094">
+        2023-11-27 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        4.12 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        728.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        176.7 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:57:21
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-22" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/26/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1095">
+        2023-11-26 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.43 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        267.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        186.7 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:23:46
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-23" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/16/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/1096">
+        2023-11-16 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        6.39 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        931.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        145.7 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        01:05:12
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-24" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/14/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/1097">
+        2023-11-14 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        6.25 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        887.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        141.9 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        01:08:18
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-25" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/11/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/walks/1098">
+        2023-11-11 Colorado Springs Walking
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.25 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        238.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        190.4 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:31:11
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+              </tr>
+              <tr id="table-33723-row-26" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/tags/2023">
+        11/11/2023
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        <!-- BEGIN app/components/link.rb
+-->    <a href="/runs/1099">
+        2023-11-11 Colorado Springs Trail Running
+    </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        Half Marathon
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        2,341 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        179.9 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        02:36:27
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
@@ -608,30 +1580,18 @@
 -->    <div class=" flex gap-2 items-center ">
       
                             <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
         2023
     </a><!-- END app/components/link.rb -->
                             <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
+-->    <a href="/tags/half-marathon">
+        Half Marathon
     </a><!-- END app/components/link.rb -->
 
     </div>
 <!-- END app/components/items_center.rb -->                  </td>
               </tr>
-              <tr id="table-33633-row-4" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
+              <tr id="table-33723-row-27" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         
@@ -639,2744 +1599,40 @@
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/books/882">
-        Fugitive Telemetry (Murderbot Diaries, 6)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/173">
-        Martha Wells
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
-        12/14/2023
+        11/09/2023
     </a><!-- END app/components/link.rb -->
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        12/17/2023
+-->    <a href="/walks/1100">
+        2023-11-09 Colorado Springs Walking
     </a><!-- END app/components/link.rb -->
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        1.02 miles
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        208.0 feet
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        203.9 feet / mile
+                  </td>
+                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
+                    
+                        00:23:30
                   </td>
                   <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
                     
                         <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        168
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
 -->    <a href="/tags/2023">
         2023
     </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-5" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
                   </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/881">
-        The Buried Giant (Vintage International)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/148">
-        Kazuo Ishiguro
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        11/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        12/13/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        336
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/literature">
-        Literature
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/world-fantasy-award-nominee">
-        World Fantasy Award Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-6" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/873">
-        Babel: Or the Necessity of Violence: An Arcane History of the Oxford Translators&#39; Revolution
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/211">
-        R. F Kuang
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/18/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        11/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        560
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/nebula-winner">
-        Nebula Winner
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/world-fantasy-award-nominee">
-        World Fantasy Award Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-7" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/880">
-        The Housemaid
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/90">
-        Freida McFadden
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        11/01/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        11/10/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        336
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/mystery">
-        Mystery
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-8" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/879">
-        The Whispering House
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/78">
-        Elizabeth Brooks
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/25/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        11/10/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        388
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-9" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/878">
-        In the Miso Soup
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/230">
-        Ryu Murakami
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/18/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/25/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        224
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-10" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/877">
-        Dead of Winter
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/64">
-        Darcy Coates
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/12/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/18/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        352
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-11" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/876">
-        Audition
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/230">
-        Ryu Murakami
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/07/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/12/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        192
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-12" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/875">
-        A House With Good Bones
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/256">
-        T. Kingfisher
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/01/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/07/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        256
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-13" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/874">
-        Hammers on Bone (Persons Non Grata, 1)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/40">
-        Cassandra Khaw
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/30/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        10/01/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        112
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/novella">
-        Novella
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-14" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/872">
-        Master of Djinn, A (Dead Djinn Universe, 1)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/202">
-        P. Djèlí Clark
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/12/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/17/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        448
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hugo-nominee">
-        Hugo Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/nebula-winner">
-        Nebula Winner
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/world-fantasy-award-nominee">
-        World Fantasy Award Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-15" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/871">
-        The Cartographers: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/208">
-        Peng Shepherd
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/03/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        400
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/mystery">
-        Mystery
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-16" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/870">
-        Severance: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/159">
-        Ling Ma
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/21/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        09/03/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        304
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-17" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/869">
-        A Touch of Jen
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/30">
-        Beth Morgan
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/17/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/21/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        320
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-18" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/868">
-        Braking Day
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/2">
-        Adam Oyebanji
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/07/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/17/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        368
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-19" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/867">
-        Just Like Home
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/240">
-        Sarah Gailey
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/23/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        08/07/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        352
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-20" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/866">
-        And Then There Were None
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/5">
-        Agatha Christie
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/23/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        320
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/mystery">
-        Mystery
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-21" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/864">
-        Dead Silence
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/232">
-        S.A. Barnes
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/10/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/22/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        352
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-22" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/865">
-        Persephone Station
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/254">
-        Stina Leicht
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/10/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        512
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-23" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/862">
-        Magpie Murders: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/22">
-        Anthony Horowitz
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/05/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        07/03/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        505
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/mystery">
-        Mystery
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-24" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/863">
-        Far from the Light of Heaven
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/259">
-        Tade Thompson
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/20/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        384
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/international">
-        International
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-25" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/861">
-        Light From Uncommon Stars
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/229">
-        Ryka Aoki
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/02/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/12/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        384
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hugo-nominee">
-        Hugo Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-26" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/860">
-        Nophek Gloss (The Graven, 1)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/86">
-        Essa Hansen
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/09/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        06/01/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        448
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-27" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/858">
-        The Midnight Library: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/174">
-        Matt Haig
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/02/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/28/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        304
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-28" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/859">
-        Killers of a Certain Age
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/72">
-        Deanna Raybourn
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/02/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/27/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        0
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/mystery">
-        Mystery
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-29" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/857">
-        The Crimson Labyrinth
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/285">
-        Yūsuke Kishi
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/30/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        05/09/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        288
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-30" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/856">
-        The Raven Tower
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/18">
-        Ann Leckie
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/22/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/30/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        464
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/world-fantasy-award-nominee">
-        World Fantasy Award Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-31" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/855">
-        The Thousand Eyes (Serpent Gates, 2)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/1">
-        A. K. Larkwood
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/22/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        385
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-32" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/854">
-        The Twisted Ones
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/256">
-        T. Kingfisher
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/03/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        400
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-33" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/853">
-        The Devil in Silver: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/272">
-        Victor LaValle
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/22/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        04/03/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        432
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/shirley-jackson-nominee">
-        Shirley Jackson Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-34" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/852">
-        The Long Way to a Small, Angry Planet (Wayfarers, 1)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/28">
-        Becky Chambers
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/14/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/22/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        464
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-35" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/851">
-        Nona the Ninth (The Locked Tomb Series, 3)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/260">
-        Tamsyn Muir
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/07/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/14/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        480
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hugo-nominee">
-        Hugo Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/nebula-nominee">
-        Nebula Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-36" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/850">
-        Inhibitor Phase (Revelation Space)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/7">
-        Alastair Reynolds
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/15/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        03/06/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        496
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-37" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/849">
-        A Prayer for the Crown-Shy: A Monk and Robot Book
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/28">
-        Becky Chambers
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/15/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        160
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/novella">
-        Novella
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-38" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/848">
-        The Hollow Places: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/256">
-        T. Kingfisher
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/06/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/11/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        352
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/horror">
-        Horror
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-39" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/847">
-        The Sky Is Yours: A Novel
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/46">
-        Chandler Klang Smith
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        02/06/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        464
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hardcover">
-        Hardcover
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-40" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/846">
-        Public Reading Followed by Discussion (French Literature)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/62">
-        Danielle Memoire
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/18/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/24/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        150
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fiction">
-        Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/paperback">
-        Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/first-edition">
-        First Edition
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-lt-200">
-        Fewer Than 200 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-41" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/845">
-        Harrow the Ninth (The Locked Tomb Series, 2)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/260">
-        Tamsyn Muir
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/06/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/18/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        560
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/fantasy">
-        Fantasy
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hugo-nominee">
-        Hugo Nominee
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-gt-400">
-        More Than 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
-              </tr>
-              <tr id="table-33633-row-42" class="even:bg-gray-50 hover:bg-gray-100 target:bg-green-100">
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/books/844">
-        Network Effect: A Murderbot Novel: 5 (Murderbot Diaries, 5)
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/authors/173">
-        Martha Wells
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2022">
-        12/30/2022
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        01/06/2023
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                        <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        352
-    </a><!-- END app/components/link.rb -->
-                  </td>
-                  <td class="relative py-4 pr-3 pl-4 text-sm sm:pl-6">
-                    
-                      <!-- BEGIN app/components/items_center.rb
--->    <div class=" flex gap-2 items-center ">
-      
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/science-fiction">
-        Science Fiction
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/trade-paperback">
-        Trade Paperback
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/series">
-        Series
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/hugo-winner">
-        Hugo Winner
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/nebula-winner">
-        Nebula Winner
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2022">
-        2022
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/2023">
-        2023
-    </a><!-- END app/components/link.rb -->
-                            <!-- BEGIN app/components/link.rb
--->    <a href="/tags/pages-200-400">
-        Between 200 and 400 Pages
-    </a><!-- END app/components/link.rb -->
-
-    </div>
-<!-- END app/components/items_center.rb -->                  </td>
               </tr>
           </tbody>
         </table>
@@ -3407,6 +1663,7 @@
       <div class="max-w-4xl mt-4 mx-auto md:mt-8">
         <div class="border-t border-gray-900/10 py-4 w-full md:flex md:items-center md:justify-between">
           <div class="flex justify-center gap-x-6 text-sm/6 text-gray-600 md:order-2">
+            <a href="/now">Now</a>
             <a href="/history">History</a>
             <a href="/pages/about">About</a>
             <a href="https://github.com/jeremyday/" class="text-gray-600 hover:text-gray-800">
@@ -3420,6 +1677,10 @@
           <p class="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
             &copy; 2026 Jeremy Day. All rights reserved.
           </p>
+
+            <p class="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
+              Published on November 7, 2026.
+            </p>
         </div>
       </div>
     </footer>
